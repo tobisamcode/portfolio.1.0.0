@@ -14,7 +14,7 @@ app.use(express.static("public"));
 app.use("/", router);
 
 app.use((req, res) => {
-  res.render("404");
+  res.status(404).render("404", { pageTitle: "Page not found" });
 });
 app.listen(3000, () => {
   console.log("server is running of port 3000...");
