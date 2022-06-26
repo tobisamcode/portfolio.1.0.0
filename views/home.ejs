@@ -6,16 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>TOBI SAM</title>
     <link rel="stylesheet" href="/css/main.css" />
+
+    <style>
+      .cursor {
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        border: 1px solid #c6c6c6;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: 0.1s;
+      }
+
+      .cursor2 {
+        position: fixed;
+        width: 10px;
+        height: 10px;
+        background-color: #c6c6c6;
+        border-radius: 50%;
+        left: 0;
+        top: 0;
+        pointer-events: none;
+        transform: translate(-50%, -50%);
+        transition: 0.15s;
+      }
+
+      .content:hover ~ .cursor {
+        transform: translate(-50%, -50%) scale(1.8);
+        border: 0;
+        background-color: white;
+        z-index: -1;
+        opacity: 0.5;
+        transition: 0.7s opacity;
+      }
+
+      .content:hover ~ .cursor2 {
+        opacity: 0;
+      }
+    </style>
   </head>
   <body>
     <section class="wrapper">
       <img src="/img/myProfile.png" alt="profile" />
+
       <div class="circle-outer">
         <div class="circle-inner"></div>
       </div>
+
       <div class="landing"></div>
+
+      <div class="cursor"></div>
+      <div class="cursor2"></div>
     </section>
 
+    <script src="/js/main.js"></script>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
