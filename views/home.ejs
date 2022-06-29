@@ -36,7 +36,7 @@
         transition: 0.2s;
       }
 
-      .content:hover ~ .cursor {
+      .wrapper .landing aside .social ul li i:hover ~ .cursor {
         transform: translate(-50%, -50%) scale(1.8);
         border: 0;
         background-color: white;
@@ -45,24 +45,60 @@
         transition: 0.7s opacity;
       }
 
-      .content:hover ~ .cursor2 {
+      .wrapper .landing aside .social ul li:hover ~ .cursor2 {
         opacity: 0;
       }
     </style>
   </head>
   <body>
-    <section class="wrapper">
+    <div class="wrapper">
       <img src="/img/myProfile.png" alt="profile" />
 
       <div class="circle-outer">
         <div class="circle-inner"></div>
       </div>
 
-      <div class="landing"></div>
+      <div class="landing">
+        <aside>
+          <div class="logo">
+            <ion-icon name="code-slash-outline"></ion-icon>
+          </div>
+
+          <div class="connect">
+            <ul>
+              <li>
+                <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-codepen"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="border"></div>
+
+          <div class="social">
+            <ul>
+              <li>
+                <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-medium"></ion-icon></a>
+              </li>
+              <li>
+                <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              </li>
+            </ul>
+          </div>
+        </aside>
+      </div>
 
       <div class="cursor"></div>
       <div class="cursor2"></div>
-    </section>
+    </div>
 
     <script src="/js/main.js"></script>
     <script
