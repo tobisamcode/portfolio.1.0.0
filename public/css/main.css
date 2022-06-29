@@ -67,8 +67,8 @@ body {
 }
 
 .wrapper .landing aside .logo {
-  height: 80px;
-  background-color: #000;
+  height: 6rem;
+  background-color: transparent;
   color: white;
   display: flex;
   align-items: center;
@@ -77,6 +77,9 @@ body {
 }
 
 .wrapper .landing aside .border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-left: 1px solid rgba(255, 255, 255, 0.164);
   height: 30%;
   margin-left: 40px;
@@ -90,7 +93,7 @@ body {
 }
 
 .wrapper .landing aside .connect ul li {
-  margin-top: 30px;
+  margin-top: 20px;
   list-style: none;
   transition: 0.5s;
 }
@@ -113,7 +116,7 @@ body {
 }
 
 .wrapper .landing aside .social ul li {
-  margin-top: 30px;
+  margin-top: 20px;
   list-style: none;
   transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
 }
@@ -125,13 +128,4 @@ body {
 
 .wrapper .landing aside .social ul li:hover {
   transform: scale(1.7);
-}
-
-.wrapper .landing aside .social ul li i:hover ~ .cursor {
-  transform: translate(-50%, -50%) scale(1.8);
-  border: 0;
-  background-color: white;
-  z-index: -1;
-  opacity: 0.5;
-  transition: 0.7s opacity;
 }
