@@ -13,7 +13,7 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
   }
 
-  .wrapper img {
+  .wrapper .bg {
     position: absolute;
     margin: auto;
     inset: -100px 0 0 -40px;
@@ -30,9 +30,11 @@
 
   .wrapper .landing aside .logo {
     height: 4rem;
-    font-size: 2em;
   }
-
+  .wrapper .landing aside .logo img {
+    margin-left: 5rem;
+    width: 8rem;
+  }
   .wrapper .landing aside .border {
     margin-left: 25px;
   }
