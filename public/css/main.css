@@ -19,7 +19,7 @@ body {
   overflow: hidden;
 }
 
-.wrapper img {
+.wrapper .bg {
   position: absolute;
   margin: auto;
   inset: -10px 0 0 0;
@@ -69,11 +69,12 @@ body {
 .wrapper .landing aside .logo {
   height: 6rem;
   background-color: transparent;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 3em;
+}
+.wrapper .landing aside .logo img {
+  margin-left: 5rem;
 }
 
 .wrapper .landing aside .border {
