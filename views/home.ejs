@@ -37,21 +37,22 @@
         transition: 0.2s;
       }
 
-      .wrapper .landing aside .social ul li i:hover ~ .cursor {
-        transform: translate(-50%, -50%) scale(1.8);
-        border: 0;
-        background-color: white;
-        z-index: -1;
-        opacity: 0.5;
-        transition: 0.7s opacity;
-      }
-
-      .wrapper .landing aside .social ul li:hover ~ .cursor2 {
-        opacity: 0;
+      .loading-text {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        font-size: 60px;
+        top: 50%;
+        right: 50%;
+        margin-top: -50px;
+        margin-right: -50px;
+        color: #fff;
+        z-index: 100;
       }
     </style>
   </head>
   <body>
+    <div class="loading-text">0%</div>
     <div class="wrapper">
       <img class="bg" src="/img/myProfile.png" alt="profile" />
 
