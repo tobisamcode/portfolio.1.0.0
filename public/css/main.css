@@ -9,6 +9,7 @@
 
 body {
   font-family: "Merriweather", serif;
+  position: relative;
 }
 
 .wrapper {
@@ -17,6 +18,8 @@ body {
   max-width: 100%;
   height: 100vh;
   overflow: hidden;
+
+  filter: blur(0);
 }
 
 .wrapper .bg {
@@ -101,7 +104,6 @@ body {
 
 .wrapper .landing aside .connect ul li a {
   color: white;
-
   font-size: 1rem;
 }
 .wrapper .landing aside .connect ul li:hover {
