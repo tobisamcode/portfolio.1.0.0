@@ -132,3 +132,175 @@ body {
 .wrapper .landing aside .social ul li:hover {
   transform: scale(1.7);
 }
+
+.wrapper .landing section {
+  width: 100%;
+}
+.wrapper .landing section header {
+  padding: 0 1.5rem;
+  padding-top: 1.43rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 80px;
+}
+
+/* hamburger */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter, transform;
+  transition-duration: 0.4s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0 10rem;
+  overflow: visible;
+  z-index: 100;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+  transform: translateY(-0.5rem);
+}
+
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #fff;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+.hamburger--spin .hamburger-inner {
+  transition-duration: 0.22s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin .hamburger-inner::before {
+  transition: top 0.1s 0.25s ease-in, opacity 0.1s ease-in;
+}
+
+.hamburger--spin .hamburger-inner::after {
+  transition: bottom 0.1s 0.25s ease-in,
+    transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.hamburger--spin.is-active .hamburger-inner {
+  transform: rotate(225deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.hamburger--spin.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.1s ease-out, opacity 0.1s 0.12s ease-out;
+}
+
+.hamburger--spin.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.1s ease-out,
+    transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+.wrapper .landing section .content {
+  position: relative;
+  width: inherit;
+  display: flex;
+  color: #fff;
+}
+
+.wrapper .landing section .content .features {
+  font-family: "Mada", sans-serif;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+  bottom: 80px;
+}
+
+.wrapper .landing section .content .features .feature {
+  width: 16.5rem;
+  transform: rotate(-90deg);
+  transform-origin: bottom;
+}
+
+.wrapper .landing section .content .features .feature span {
+  display: block;
+  width: 1.25rem;
+  height: 0.125rem;
+  margin-bottom: 1.25rem;
+  background-color: #ee5454;
+  position: absolute;
+  bottom: 4rem;
+}
+.wrapper .landing section .content .features .feature:nth-child(2) span {
+  height: 2rem;
+}
+
+.wrapper .landing section .content .features .feature .wrap {
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .features .feature .wrap h1 {
+  font-size: 1.5rem;
+  bottom: 0.25rem;
+  letter-spacing: 2px;
+}
+
+.wrapper .landing section .content .features .feature .wrap p {
+  font-size: 0.8rem;
+  line-height: 1.5em;
+  color: #a8a8a8;
+}
