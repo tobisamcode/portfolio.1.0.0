@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Mada:wght@400;600&family=Merriweather:wght@300;400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
 
 * {
   padding: 0;
@@ -8,7 +9,7 @@
 }
 
 body {
-  font-family: "Merriweather", serif;
+  font-family: "Raleway", sans-serif;
   position: relative;
 }
 
@@ -154,7 +155,7 @@ body {
 
 .wrapper .landing section .content .features {
   font-family: "Mada", sans-serif;
-  width: 25%;
+  width: 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -166,9 +167,8 @@ body {
 
 .wrapper .landing section .content .features .feature {
   width: 16.5rem;
-  transform: rotate(-90deg);
-  transform-origin: bottom;
-  transition: 0.4s transform;
+  transform: rotate(0deg);
+  height: 16.5rem;
 }
 .wrapper .landing section .content .features .feature:hover {
   transform: rotate(0deg);
@@ -202,6 +202,181 @@ body {
 
 .wrapper .landing section .content .features .feature .wrap p {
   font-size: 0.8rem;
+  line-height: 1.5em;
+  color: #a8a8a8;
+}
+
+.wrapper .landing section .content .theme {
+  width: 40%;
+  margin-right: 19.375rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  bottom: 8.75rem;
+}
+
+.wrapper .landing section .content .theme h2 {
+  text-transform: capitalize;
+  color: #ee5454;
+  font-size: 1.5em;
+  align-self: flex-start;
+  overflow: hidden;
+  position: relative;
+  right: -5rem;
+}
+
+.wrapper .landing section .content .theme h2 .wrap {
+  position: relative;
+}
+
+.wrapper .landing section .content .theme h2 .wrap span {
+  position: relative;
+  font-size: 2em;
+  font-weight: 400;
+  margin: 0 10px;
+  color: #fff;
+  top: 5px;
+}
+
+.wrapper .landing section .content .theme h1 {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 10em;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+.wrapper .landing section .content .theme h1 .wrap {
+  position: relative;
+}
+
+.wrapper .landing section .content .theme p {
+  text-transform: capitalize;
+  /* font-style: italic; */
+  font-size: 2.6em;
+  font-weight: 200;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.5),
+    rgba(255, 255, 255, 0.5)
+  );
+  display: flex;
+  align-self: flex-end;
+  padding: 2px 20px;
+}
+
+.wrapper .landing section .content .theme .bar {
+  width: 31.25rem;
+  height: 5px;
+  background-color: #505050;
+  border-radius: 5px;
+  position: absolute;
+  bottom: -20px;
+  margin-left: 18rem;
+}
+
+.wrapper .landing section .content .theme .bar::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ee5454;
+}
+
+.wrapper .landing section .content .extra {
+  width: 20%;
+  height: 100vh;
+  position: relative;
+}
+
+.wrapper .landing section .content .extra .half-num {
+  position: relative;
+  top: 6.25rem;
+  left: 4.375rem;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.wrapper .landing section .content .extra .half-num h1 {
+  font-size: 8em;
+  font-weight: 200;
+  position: relative;
+  right: 2.5rem;
+  font-family: "Merriweather", serif;
+}
+
+.wrapper .landing section .content .extra .ion {
+  color: #ee5454;
+  font-size: 2rem;
+  font-weight: 200;
+  transition: 0.8s transform linear;
+}
+
+.wrapper .landing section .content .extra .ion:hover {
+  transform: translateX(-2rem);
+}
+
+.wrapper .landing section .content .extra .love {
+  position: absolute;
+  bottom: 17.5rem;
+  /* display: flex; */
+}
+.wrapper .landing section .content .extra .love .go {
+  width: 2.5625rem;
+  height: 2.5625rem;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  padding: 13px;
+  border-radius: 50%;
+  background-color: #ee5454;
+}
+
+.wrapper .landing section .content .extra .love .go span {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50%;
+  border: 1px solid white;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  letter-spacing: 1px;
+}
+.wrapper .landing section .content .extra .love .content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.wrapper .landing section .content .extra .love .content h4 {
+  font-size: 1em;
+  text-transform: capitalize;
+  position: relative;
+  margin-top: 2rem;
+  bottom: 10px;
+}
+
+.wrapper .landing section .content .extra .love .content h4::before {
+  content: "";
+  display: block;
+  margin-bottom: 1.25rem;
+  width: 1.875rem;
+  height: 4px;
+  background-color: #ee5454;
+  position: absolute;
+  bottom: 8px;
+}
+
+.wrapper .landing section .content .extra .love .content p {
+  font-size: 12px;
   line-height: 1.5em;
   color: #a8a8a8;
 }
