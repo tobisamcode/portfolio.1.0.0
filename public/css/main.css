@@ -171,9 +171,6 @@ body {
   height: 16.5rem;
 }
 .wrapper .landing section .content .features .feature:hover {
-  transform: rotate(0deg);
-  height: 16.5rem;
-  /* transform-origin: top; */
 }
 
 .wrapper .landing section .content .features .feature span {
