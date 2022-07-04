@@ -42,17 +42,7 @@
     margin-left: 25px;
   }
 
-  .wrapper .landing section .content {
+  .wrapper .landing section .content .features {
     display: none;
-  }
-
-  .hamburger {
-    padding: -1rem 0 0 0;
-    margin: 0;
-  }
-
-  .hamburger-box {
-    width: 20px;
-    height: 14px;
   }
 }
