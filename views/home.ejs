@@ -2,7 +2,7 @@
 <html lang="en">
   <%-include('includes/head.ejs') %>
   <body>
-    <div class="loading-text">0%</div>
+    <!-- <div class="loading-text">0%</div> -->
     <div class="wrapper">
       <img class="bg" src="/img/myProfile.png" alt="profile" />
 
@@ -88,6 +88,20 @@
                 <span class="wrap">tobi</span>
               </h1>
               <p>I make things work...</p>
+
+              <div class="next">
+                <a href="#main">
+                  <h3>
+                    <span
+                      ><ion-icon
+                        class="bounce"
+                        name="arrow-down-outline"
+                      ></ion-icon></span
+                    >scroll
+                  </h3>
+                </a>
+              </div>
+
               <div class="bar"></div>
             </div>
 
@@ -131,6 +145,20 @@
       <div class="cursor"></div>
       <div class="cursor2"></div>
     </div>
+
+    <section class="main" id="main">
+      <header>
+        <div class="logo"><img src="/img/logo.png" alt="logo" /></div>
+        <nav>
+          <ul>
+            <li><a href="/about">about</a></li>
+            <li><a href="/projects">projects</a></li>
+            <li><a href="/articles">articles</a></li>
+            <li><a href="/contact">contact</a></li>
+          </ul>
+        </nav>
+      </header>
+    </section>
 
     <script src="/js/main.js"></script>
     <script
