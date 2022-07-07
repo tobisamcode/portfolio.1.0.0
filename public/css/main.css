@@ -588,7 +588,7 @@ main .intro_section .intro_btn a {
   align-items: center;
   padding: 1rem;
   font-family: inherit;
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: var(--grey-text);
   text-decoration: none;
 }
@@ -601,4 +601,8 @@ main .intro_section .intro_btn a .circle {
   height: 3.5rem;
   width: 3.5rem;
   border-radius: 50%;
+}
+
+main .intro_section .intro_btn a .btn-text {
+  text-transform: uppercase;
 }
