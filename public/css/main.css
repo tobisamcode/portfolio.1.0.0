@@ -265,56 +265,6 @@ body {
   position: relative;
 }
 
-.wrapper .landing section .content .theme p {
-  text-transform: capitalize;
-  /* font-style: italic; */
-  font-size: 2.6em;
-  font-weight: 200;
-  background: linear-gradient(
-    45deg,
-    rgba(0, 0, 0, 0.5),
-    rgba(255, 255, 255, 0.5)
-  );
-  display: flex;
-  align-self: flex-end;
-  padding: 2px 20px;
-}
-
-.wrapper .landing section .content .theme .next a {
-  text-decoration: none;
-  color: white;
-}
-
-.wrapper .landing section .content .theme .next h3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1rem;
-  margin-top: 5rem;
-  gap: 2rem;
-  font-weight: 400;
-}
-
-.wrapper .landing section .content .theme .next h3 span .bounce {
-  border: 3px solid #ee5454;
-  height: 2rem;
-  padding: 0.3rem;
-  border-radius: 2.5rem;
-  color: #ee5454;
-  font-size: 1rem;
-  animation: bounce 1.5s infinite;
-}
-
-.wrapper .landing section .content .theme .bar {
-  width: 31.25rem;
-  height: 5px;
-  background-color: #505050;
-  border-radius: 5px;
-  position: absolute;
-  bottom: -20px;
-  margin-left: 18rem;
-}
-
 .wrapper .landing section .content .theme .bar::before {
   content: "";
   position: absolute;
@@ -424,23 +374,42 @@ body {
 
 .wrapper .landing section .content .extra .scroll {
   position: absolute;
-  bottom: 7.5rem;
-  right: 0;
+  bottom: 4.5rem;
+  right: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.wrapper .landing section .content .extra .scroll .scroll-widget {
+.wrapper .landing section .content .extra .scroll .next {
   display: flex;
   align-items: center;
+  bottom: 0;
 }
 
-.wrapper .landing section .content .extra .scroll .scroll-widget .circle {
-  width: 30px;
-  height: 30px;
-  border: 1px solid #fff;
-  border-radius: 50%;
-  margin: 0 2px;
+.wrapper .landing section .content .extra .scroll .next a {
+  text-decoration: none;
+  color: white;
+}
+
+.wrapper .landing section .content .extra .scroll .next h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 5rem;
+  gap: 2rem;
+  font-weight: 400;
+}
+
+.wrapper .landing section .content .extra .scroll .next h3 span .bounce {
+  border: 3px solid #ee5454;
+  height: 2rem;
+  padding: 0.3rem;
+  border-radius: 2.5rem;
+  color: #ee5454;
+  font-size: 1rem;
+  animation: bounce 1.5s infinite;
 }
 
 .wrapper .landing section .content .extra .scroll h3 {
