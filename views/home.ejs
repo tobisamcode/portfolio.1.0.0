@@ -96,8 +96,8 @@
                       ><ion-icon
                         class="bounce"
                         name="arrow-down-outline"
-                      ></ion-icon></span
-                    >scroll
+                      ></ion-icon
+                    ></span>
                   </h3>
                 </a>
               </div>
@@ -141,9 +141,6 @@
           </div>
         </section>
       </div>
-
-      <div class="cursor"></div>
-      <div class="cursor2"></div>
     </div>
 
     <main class="main" id="main">
@@ -157,6 +154,13 @@
             <li><a href="/contact">contact</a></li>
           </ul>
         </nav>
+        <div class="nav-controls">
+          <button
+            id="menu-display"
+            title="Show Menu"
+            class="hamburger"
+          ></button>
+        </div>
       </header>
 
       <section class="intro_section">
@@ -185,24 +189,28 @@
         <a href="/about" class="btn">more about me</a>
       </section>
 
-      <svg
-        viewBox="0 0 500 150"
-        preserveAspectRatio="none"
-        style="height: 20%; width: 100%"
-      >
-        <path
-          d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-          style="stroke: none; fill: var(--shade-100)"
-        ></path>
-        <path
-          class="neon-path"
-          d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
-          style="stroke: var(--neon-color); fill: none"
-        ></path>
-      </svg>
+      <div class="wave-border">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: var(--shade-100)"
+          ></path>
+          <path
+            class="neon-path"
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+            style="stroke: var(--neon-color); fill: none"
+          ></path>
+        </svg>
+      </div>
       <section class="about-section"></section>
     </main>
 
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
     <script src="/js/main.js"></script>
     <script
       type="module"
