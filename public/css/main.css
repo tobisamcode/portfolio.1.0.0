@@ -475,12 +475,12 @@ body {
 
 main {
   background-color: #fafafa;
-  height: 100vh;
+  height: 1500px;
   font-family: "Inter", sans-serif;
 }
 main section {
   max-width: 70%;
-  height: 100vh;
+
   margin: 0 auto;
 }
 
@@ -489,6 +489,7 @@ main header {
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
+  max-width: 100%;
 }
 
 main header .logo {
@@ -501,6 +502,7 @@ main header .logo img {
   width: 5rem;
 }
 main header nav {
+  /* display: none; */
 }
 main header nav ul {
   display: flex;
@@ -552,7 +554,7 @@ main .intro_section {
 }
 
 main .intro_section h1 {
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: var(--shade-500);
   font-weight: 600;
   margin-bottom: 1rem;
@@ -579,6 +581,7 @@ main .intro_section .intro_btn {
   border: none;
   border-radius: 200px;
   background-color: inherit;
+  margin-top: 4rem;
 }
 
 main .intro_section .intro_btn a {
