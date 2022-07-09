@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Mada:wght@400;600&family=Merriweather:wght@300;400;700;900&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
+
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
 * {
@@ -81,6 +84,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .wrapper .landing aside .logo img {
   width: 6rem;
   margin-left: 5rem;
@@ -112,6 +116,7 @@ body {
   color: white;
   font-size: 1rem;
 }
+
 .wrapper .landing aside .connect ul li:hover {
   transform: scale(1.7);
 }
@@ -176,6 +181,7 @@ body {
   transform: rotate(0deg);
   height: 16.5rem;
 }
+
 .wrapper .landing section .content .features .feature:hover {
 }
 
@@ -269,10 +275,12 @@ body {
   align-self: flex-end;
   padding: 2px 20px;
 }
+
 .wrapper .landing section .content .theme .next a {
   text-decoration: none;
   color: white;
 }
+
 .wrapper .landing section .content .theme .next h3 {
   display: flex;
   justify-content: center;
@@ -282,6 +290,7 @@ body {
   gap: 2rem;
   font-weight: 400;
 }
+
 .wrapper .landing section .content .theme .next h3 span .bounce {
   border: 1px solid #ee5454;
   height: 2rem;
@@ -291,6 +300,7 @@ body {
   font-size: 1rem;
   animation: bounce 1.5s infinite;
 }
+
 .wrapper .landing section .content .theme .bar {
   width: 31.25rem;
   height: 5px;
@@ -325,6 +335,7 @@ body {
   align-items: center;
   overflow: hidden;
 }
+
 .wrapper .landing section .content .extra .half-num h1 {
   font-size: 8em;
   font-weight: 200;
@@ -349,6 +360,7 @@ body {
   bottom: 17.5rem;
   /* display: flex; */
 }
+
 .wrapper .landing section .content .extra .love .go {
   width: 2.5625rem;
   height: 2.5625rem;
@@ -413,10 +425,12 @@ body {
   display: flex;
   align-items: center;
 }
+
 .wrapper .landing section .content .extra .scroll .scroll-widget {
   display: flex;
   align-items: center;
 }
+
 .wrapper .landing section .content .extra .scroll .scroll-widget .circle {
   width: 30px;
   height: 30px;
@@ -424,6 +438,7 @@ body {
   border-radius: 50%;
   margin: 0 2px;
 }
+
 .wrapper .landing section .content .extra .scroll h3 {
   font-family: "Mada", sans-serif;
   font-size: 14px;
@@ -478,9 +493,9 @@ main {
   height: 1500px;
   font-family: "Inter", sans-serif;
 }
+
 main section {
   max-width: 70%;
-
   margin: 0 auto;
 }
 
@@ -490,6 +505,7 @@ main header {
   align-items: center;
   padding: 0.5rem;
   max-width: 100%;
+  margin-bottom: 5rem;
 }
 
 main header .logo {
@@ -501,9 +517,11 @@ main header .logo {
 main header .logo img {
   width: 5rem;
 }
+
 main header nav {
   /* display: none; */
 }
+
 main header nav ul {
   display: flex;
   gap: 2rem;
@@ -548,7 +566,6 @@ main header nav ul li a:active:before {
 main .intro_section {
   display: flex;
   flex-direction: column;
-
   width: 70%;
   margin: 4rem auto;
 }
@@ -557,12 +574,14 @@ main .intro_section h1 {
   font-size: 2.5rem;
   color: var(--shade-500);
   font-weight: 600;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 3rem;
 }
 
 main .intro_section p {
   color: var(--grey-text);
   font-size: 1.5rem;
+  line-height: 2rem;
   margin-bottom: 1.5rem;
 }
 main .intro_section p .highlight {
@@ -575,37 +594,27 @@ main .intro_section p .highlight:hover {
 
   color: #000;
 }
-main .intro_section .intro_btn {
-  width: 30%;
+main .intro_section a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80px;
   align-self: center;
-  border: none;
-  border-radius: 200px;
+  border: 2px solid var(--shade-300);
+  color: var(--shade-300);
+  border-radius: 8px;
+  padding: 1.5rem;
   background-color: inherit;
   margin-top: 4rem;
-}
-
-main .intro_section .intro_btn a {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  font-family: inherit;
-  font-size: 1rem;
-  color: var(--grey-text);
-  text-decoration: none;
-}
-main .intro_section .intro_btn a .circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid #000;
-  padding: 1rem;
-  height: 3.5rem;
-  width: 3.5rem;
-  border-radius: 50%;
-}
-
-main .intro_section .intro_btn a .btn-text {
   text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-weight: 600;
+  transition: 0.4s ease-in-out;
+}
+main .intro_section a:hover {
+  color: white;
+  background-color: var(--main-color);
+  border-color: white;
 }
