@@ -296,7 +296,7 @@ body {
 }
 
 .wrapper .landing section .content .theme .next h3 span .bounce {
-  border: 1px solid #ee5454;
+  border: 3px solid #ee5454;
   height: 2rem;
   padding: 0.3rem;
   border-radius: 2.5rem;
@@ -493,6 +493,11 @@ body {
   --grey-text: #595959;
 }
 
+.wave-border {
+  height: 150px;
+  overflow: hidden;
+}
+
 main {
   background-color: #fafafa;
   height: 1500px;
@@ -566,8 +571,10 @@ main header nav ul li a:active:before {
 
 main .intro_section {
   width: 50%;
-  margin: 4rem auto;
+  margin: 0 auto;
+  padding: 5rem 0;
   display: flex;
+
   flex-direction: column;
 }
 
@@ -624,5 +631,4 @@ main .intro_section a:hover {
 main .about-section {
   background-color: var(--shade-100);
   height: 100vh;
-  margin-top: -10px;
 }
