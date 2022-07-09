@@ -308,7 +308,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #ee5454;
+  background-color: var(--main-color);
 }
 
 .wrapper .landing section .content .extra {
