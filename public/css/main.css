@@ -6,6 +6,8 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -483,7 +485,7 @@ body {
 main {
   background-color: #fafafa;
   height: 1500px;
-  font-family: "Inter", sans-serif;
+  font-family: "JetBrains Mono", monospace;
 }
 
 main header {
@@ -775,4 +777,96 @@ main .project-section .container .project-content-container .project-content {
 .articles .articles-container .article:hover img {
   opacity: 1;
   filter: brightness(100%) grayscale(0);
+}
+
+.contact {
+  background-color: #000 !important;
+  color: var(--shade-300);
+  font-weight: 200;
+}
+
+.contact .contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .contact-container .paragraph {
+  align-self: flex-end;
+  margin-bottom: 2rem;
+}
+
+.contact .contact-container hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #333; /* old IE */
+  background-color: #333; /* Modern Browsers */
+  margin-bottom: 2rem;
+}
+
+.contact .contact-container .connect {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.contact .contact-container .first {
+  font-size: 0.925rem;
+  margin-bottom: 1rem;
+  color: var(--grey-text);
+}
+
+.contact .contact-container .follow {
+  align-self: flex-end;
+  margin-top: 2rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
+  flex-direction: column;
+}
+
+.contact .contact-container .follow ul {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+.contact .contact-container .follow ul li {
+  display: flex;
+  gap: 0.4rem;
+  align-items: flex-end;
+  position: relative;
+}
+
+.contact .contact-container .follow ul li span {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  left: -12px;
+  bottom: 4px;
+  border-radius: 50%;
+}
+
+.gh {
+  background-color: rgb(0, 255, 0);
+}
+.li {
+  background-color: blue;
+}
+.tw {
+  background-color: rgb(15, 80, 219);
+}
+.me {
+  background-color: rgb(247, 15, 15);
+}
+.contact .contact-container .follow ul li a {
+  color: var(--shade-100);
+}
+
+.contact .contact-container .hello {
+  align-self: flex-end;
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: flex-end;
+  flex-direction: column;
 }
