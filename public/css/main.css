@@ -469,7 +469,7 @@ body {
   padding: 5rem 0;
   width: 90%;
   max-width: 1280px;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .center {
@@ -483,6 +483,7 @@ body {
 }
 
 main {
+  /* overflow: hidden; */
   background-color: #fafafa;
   height: 1500px;
   font-family: "JetBrains Mono", monospace;
@@ -646,6 +647,7 @@ main .project-section .container .project-container .project-image {
 main .project-section .container .project-container .project-image img {
   display: block;
   width: 100%;
+  height: auto;
   object-fit: cover;
   object-position: top;
   opacity: 0.8;
@@ -710,32 +712,44 @@ main .project-section .container .project-content-container .project-content {
 }
 
 /* ARTICLES SECTION  */
+.articles {
+  margin: 0 auto;
+}
 
 .articles .section-title {
+  margin: 0 auto;
   margin-bottom: 1rem;
   font-size: 2.5rem;
   font-weight: 600;
   color: var(--shade-500);
+  max-width: 95%;
 }
 .articles .section-subtitle {
   font-size: 1.5rem;
+  margin: 0 auto;
   color: var(--grey-text);
-  max-width: 60ch;
+  max-width: 95%;
 }
 
 .articles .articles-container {
   display: flex;
-  margin: 1.5rem -1.5rem -1.5rem;
+  margin: 0.725rem auto;
   flex-wrap: wrap;
+  max-width: 95%;
 }
-
+.articles .articles-container .article-card {
+  max-width: 33.33%;
+}
 .articles .articles-container .article {
   background-color: var(--shade-100);
+  /* margin: 0 auto; */
   flex: 1 1 300px;
+  width: 95%;
+  height: 95%;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem;
   transition: transform 500ms;
+  padding-bottom: 1rem;
 }
 
 .articles .articles-container .article:hover {
@@ -788,7 +802,7 @@ main .project-section .container .project-content-container .project-content {
 .contact .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 .contact .contact-container .paragraph {
