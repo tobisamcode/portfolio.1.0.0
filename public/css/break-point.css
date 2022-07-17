@@ -3,3 +3,107 @@
 769px — 1024px: Small screens, laptops
 1025px — 1200px: Desktops, large screens
 1201px and more —  Extra large screens, TV */
+
+@media (max-width: 768px) {
+  main
+    .project-section
+    .container
+    .project-container
+    .project:nth-of-type(even) {
+    flex-direction: column;
+  }
+
+  /* PROJECT */
+  main .project-section .container .project-container .project {
+    flex-direction: column;
+  }
+  main .project-section .container .title-container h2 {
+    font-size: 1.5rem;
+  }
+  main .project-section .container .title-container p {
+    font-size: 1rem;
+  }
+
+  main .project-section .container .project-container .project-image {
+    width: 100%;
+  }
+  main .project-section .container .project-content-container {
+    width: 100%;
+  }
+  main .project-section .container .project-content-container .project-content {
+    padding: 2rem;
+  }
+  .project-content-container .project-content .project-title {
+    font-size: 1.25rem;
+  }
+  .project-content-container .project-content .project-description p {
+    font-size: 1rem;
+  }
+  .project-content-container .project-content .project-tags .tag {
+    font-size: 0.6rem;
+  }
+
+  /* ARTICLE */
+  .articles .section-title {
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+  }
+  .articles .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .article .article-image a img {
+    width: 100%;
+    height: 250px;
+    /* object-fit: cover; */
+    object-position: top;
+    opacity: 0.8;
+    filter: brightness(45%) grayscale(1);
+    transition: filter 1s;
+  }
+  .article-site a,
+  .card-site a {
+    font-size: 0.75rem;
+  }
+  .article-content h3 {
+    font-size: 1rem;
+  }
+  .article-content p {
+    font-size: 0.8rem;
+  }
+
+  /* CONTACT */
+  .contact {
+    font-size: 1rem;
+  }
+  .contact .contact-container {
+    align-items: center;
+  }
+  .contact .contact-container .paragraph {
+    align-self: center;
+    font-size: 0.9rem;
+  }
+  .contact .contact-container .first {
+    font-size: 0.8rem;
+  }
+  .contact .contact-container .connect {
+    align-items: center;
+  }
+  .contact .contact-container .follow,
+  .contact .contact-container .hello {
+    align-self: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .articles .articles-container .article-card {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  .articles .articles-container .article-card {
+    max-width: 50%;
+  }
+}
