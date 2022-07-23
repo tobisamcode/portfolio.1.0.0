@@ -887,3 +887,25 @@ main .project-section .container .project-content-container .project-content {
   align-items: flex-end;
   flex-direction: column;
 }
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 2;
+  background: var(--main-color);
+}
+
+.first {
+  top: 0;
+}
+
+.second {
+  top: 33.3%;
+}
+
+.third {
+  top: 66.6%;
+}
