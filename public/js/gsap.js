@@ -100,6 +100,8 @@ t1.fromTo(
   2
 );
 
+// TOBI
+
 t1.fromTo(
   ".landing section .content .theme h1 .wrap",
   1.5,
@@ -111,6 +113,8 @@ t1.fromTo(
   },
   2
 );
+
+// Make things work
 
 t1.fromTo(
   ".landing section .content .theme p",
@@ -124,6 +128,8 @@ t1.fromTo(
   3
 );
 
+// 02
+
 t1.fromTo(
   ".landing section .content .extra .half-num h1 .wrap",
   1.5,
@@ -134,4 +140,39 @@ t1.fromTo(
     right: "0"
   },
   3
+);
+
+// svg
+t1.from(
+  ".landing section .content .extra .half-num .ion ",
+  1.5,
+  {
+    y: "-500"
+  },
+  1
+);
+
+// go
+t1.fromTo(
+  ".landing section .content .extra .love .go ",
+  2,
+  {
+    opacity: "0"
+  },
+  {
+    opacity: "1"
+  },
+  3
+);
+
+t1.fromTo(
+  ".landing section .content .extra .love .content ",
+  1.5,
+  {
+    opacity: "0"
+  },
+  {
+    opacity: "1"
+  },
+  3.5
 );
