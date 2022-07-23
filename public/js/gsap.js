@@ -27,7 +27,7 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  15
+  10
 );
 
 // aside
@@ -38,7 +38,7 @@ t1.from(
   {
     x: "-150"
   },
-  3
+  7
 );
 
 // header
@@ -49,7 +49,7 @@ t1.from(
   {
     y: "-150"
   },
-  2
+  6
 );
 
 // features
@@ -60,7 +60,7 @@ t1.from(
   {
     y: "-150"
   },
-  3
+  7
 );
 
 t1.fromTo(
@@ -72,7 +72,7 @@ t1.fromTo(
   {
     height: "30"
   },
-  3
+  7
 );
 
 t1.fromTo(
@@ -84,7 +84,7 @@ t1.fromTo(
   {
     height: "60"
   },
-  3
+  7
 );
 
 // salut
@@ -97,7 +97,7 @@ t1.fromTo(
   {
     top: "0"
   },
-  2
+  6
 );
 
 // TOBI
@@ -111,7 +111,7 @@ t1.fromTo(
   {
     top: "0"
   },
-  2
+  6
 );
 
 // Make things work
@@ -125,7 +125,7 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  3
+  7
 );
 
 // 02
@@ -139,7 +139,7 @@ t1.fromTo(
   {
     right: "0"
   },
-  3
+  7
 );
 
 // svg
@@ -149,7 +149,7 @@ t1.from(
   {
     y: "-500"
   },
-  1
+  5
 );
 
 // go
@@ -162,7 +162,7 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  3
+  7
 );
 
 t1.fromTo(
@@ -174,23 +174,23 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  3.5
+  8
 );
 
 TweenMax.to(".first", 1.5, {
-  delay: 1,
+  delay: 4,
   left: "-100%",
   ease: Expo.easeInOut
 });
 
 TweenMax.to(".second", 1.5, {
-  delay: 1.5,
+  delay: 5,
   left: "-100%",
   ease: Expo.easeInOut
 });
 
 TweenMax.to(".third", 1.5, {
-  delay: 2.0,
+  delay: 6,
   left: "-100%",
   ease: Expo.easeInOut
 });
