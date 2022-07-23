@@ -177,7 +177,7 @@ t1.fromTo(
   8
 );
 
-TweenMax.to(".first", 1.5, {
+TweenMax.to(".first", 2, {
   delay: 4,
   left: "-100%",
   ease: Expo.easeInOut
@@ -189,7 +189,7 @@ TweenMax.to(".second", 1.5, {
   ease: Expo.easeInOut
 });
 
-TweenMax.to(".third", 1.5, {
+TweenMax.to(".third", 2, {
   delay: 6,
   left: "-100%",
   ease: Expo.easeInOut
