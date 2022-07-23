@@ -735,14 +735,14 @@ main .project-section .container .project-content-container .project-content {
   display: flex;
   margin: 0.725rem auto;
   flex-wrap: wrap;
-  max-width: 95%;
+  max-width: 100%;
 }
 .articles .articles-container .article-card {
   max-width: 33.33%;
 }
 .articles .articles-container .article {
   background-color: var(--shade-100);
-  /* margin: 0 auto; */
+  margin: 0 auto;
   flex: 1 1 300px;
   width: 95%;
   height: 95%;
