@@ -13,7 +13,7 @@ const bg = document.querySelector(".wrapper");
 
 let load = 0;
 
-let int = setInterval(blurring, 60);
+let int = setInterval(blurring, 20);
 
 function blurring() {
   load++;
