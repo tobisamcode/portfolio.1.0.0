@@ -482,6 +482,9 @@ body {
   overflow: hidden;
 }
 
+.wrap {
+  position: relative;
+}
 main {
   /* overflow: hidden; */
   background-color: #fafafa;
