@@ -19,6 +19,27 @@ html {
   scroll-behavior: smooth;
 }
 
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: 2;
+  background: var(--main-color);
+}
+
+.first {
+  top: 0;
+}
+
+.second {
+  top: 33.3vh;
+}
+
+.third {
+  top: 66.6vh;
+}
+
 body {
   /* font-family: "Raleway", sans-serif; */
   position: relative;
@@ -189,8 +210,8 @@ body {
   height: 16.5rem;
 }
 
-.wrapper .landing section .content .features .feature:hover {
-}
+/* .wrapper .landing section .content .features .feature:hover {
+} */
 
 .wrapper .landing section .content .features .feature span {
   display: block;
@@ -510,10 +531,6 @@ main header .logo {
 
 main header .logo img {
   width: 5rem;
-}
-
-main header nav {
-  /* display: none; */
 }
 
 main header nav ul {
@@ -886,26 +903,4 @@ main .project-section .container .project-content-container .project-content {
   gap: 0.5rem;
   align-items: flex-end;
   flex-direction: column;
-}
-
-/* OVERLAY */
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  z-index: 2;
-  background: var(--main-color);
-}
-
-.first {
-  top: 0;
-}
-
-.second {
-  top: 33.3%;
-}
-
-.third {
-  top: 66.6%;
 }
