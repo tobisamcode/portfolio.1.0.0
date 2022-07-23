@@ -99,6 +99,7 @@
 @media (max-width: 768px) {
   .articles .articles-container .article-card {
     max-width: 100%;
+    margin: 0 auto;
   }
 }
 
