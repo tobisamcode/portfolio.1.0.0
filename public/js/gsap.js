@@ -97,5 +97,41 @@ t1.fromTo(
   {
     top: "0"
   },
+  2
+);
+
+t1.fromTo(
+  ".landing section .content .theme h1 .wrap",
+  1.5,
+  {
+    top: "300"
+  },
+  {
+    top: "0"
+  },
+  2
+);
+
+t1.fromTo(
+  ".landing section .content .theme p",
+  1.5,
+  {
+    opacity: "0"
+  },
+  {
+    opacity: "1"
+  },
+  3
+);
+
+t1.fromTo(
+  ".landing section .content .extra .half-num h1 .wrap",
+  1.5,
+  {
+    right: "300"
+  },
+  {
+    right: "0"
+  },
   3
 );
