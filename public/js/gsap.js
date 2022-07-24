@@ -38,7 +38,7 @@ t1.from(
   {
     x: "-150"
   },
-  7
+  8
 );
 
 // header
@@ -49,7 +49,7 @@ t1.from(
   {
     y: "-150"
   },
-  6
+  7
 );
 
 // features
@@ -60,7 +60,7 @@ t1.from(
   {
     y: "-250"
   },
-  7
+  9
 );
 
 t1.fromTo(
@@ -72,7 +72,7 @@ t1.fromTo(
   {
     height: "30"
   },
-  7
+  9
 );
 
 t1.fromTo(
@@ -84,7 +84,7 @@ t1.fromTo(
   {
     height: "60"
   },
-  7
+  9
 );
 
 // salut
@@ -97,7 +97,7 @@ t1.fromTo(
   {
     top: "0"
   },
-  6
+  8
 );
 
 // TOBI
@@ -111,7 +111,7 @@ t1.fromTo(
   {
     top: "0"
   },
-  6
+  8
 );
 
 // Make things work
@@ -125,7 +125,7 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  7
+  9
 );
 
 // 02
@@ -139,7 +139,7 @@ t1.fromTo(
   {
     right: "0"
   },
-  7
+  9
 );
 
 // svg
@@ -149,7 +149,7 @@ t1.from(
   {
     y: "-500"
   },
-  5
+  7
 );
 
 // go
@@ -162,7 +162,7 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  7
+  9
 );
 
 t1.fromTo(
@@ -174,23 +174,58 @@ t1.fromTo(
   {
     opacity: "1"
   },
-  8
+  10
 );
 
-TweenMax.to(".first", 2, {
-  delay: 4,
+TweenMax.to(".first", 1, {
+  delay: 1,
   left: "-100%",
   ease: Expo.easeInOut
 });
 
 TweenMax.to(".second", 1.5, {
-  delay: 5,
+  delay: 2,
   left: "-100%",
   ease: Expo.easeInOut
 });
 
-TweenMax.to(".third", 2, {
-  delay: 6,
+TweenMax.to(".third", 1, {
+  delay: 2.5,
   left: "-100%",
+  ease: Expo.easeInOut
+});
+
+// TEXT ANIMATION
+var text = document.querySelector(".text h1"),
+  char = text.querySelectorAll(".text span"),
+  replaceChar = text.querySelectorAll('.text span:not([data-char="."])');
+
+var tl = gsap.timeline();
+
+tl.set(char, {
+  yPercent: -110
+});
+tl.set(text, {
+  autoAlpha: 1
+});
+tl
+  .to(char, {
+    duration: 1,
+    yPercent: 0,
+    stagger: 0.05,
+    ease: "expo.inOut"
+  })
+  .to(replaceChar, {
+    duration: 1,
+    yPercent: 110,
+    ease: "expo.inOut",
+    repeat: -1,
+    yoyo: true,
+    stagger: 0.1
+  });
+
+TweenMax.to(".text", 4, {
+  delay: 3,
+  display: "none",
   ease: Expo.easeInOut
 });
