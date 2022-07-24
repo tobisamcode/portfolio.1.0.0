@@ -229,3 +229,17 @@ TweenMax.to(".text", 4, {
   display: "none",
   ease: Expo.easeInOut
 });
+
+// TEXT ANIMATE ON SCROLL
+
+gsap.to(".ogg p", {
+  backgroundPositionX: "0%",
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".ogg p",
+    scrub: 1,
+    start: 200,
+    end: 800,
+    markers: true
+  }
+});
