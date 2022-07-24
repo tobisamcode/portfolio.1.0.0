@@ -40,7 +40,7 @@
     font-size: 1rem;
   }
   .project-content-container .project-content .project-tags .tag {
-    font-size: 0.6rem;
+    font-size: 0.4rem;
   }
 
   /* ARTICLE */
@@ -74,17 +74,17 @@
 
   /* CONTACT */
   .contact {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .contact .contact-container {
     align-items: center;
   }
   .contact .contact-container .paragraph {
     align-self: center;
-    font-size: 0.9rem;
+    font-size: 0.6rem;
   }
   .contact .contact-container .first {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
   .contact .contact-container .connect {
     align-items: center;
