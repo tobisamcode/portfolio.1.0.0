@@ -25,7 +25,7 @@ html {
 }
 
 .preloader {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -33,7 +33,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999999;
 }
 
 .overlay {
@@ -210,7 +209,6 @@ body {
 }
 
 .wrapper .landing section .content .features {
-  font-family: "Mada", sans-serif;
   width: 20%;
   display: flex;
   flex-direction: column;
@@ -249,7 +247,7 @@ body {
 }
 
 .wrapper .landing section .content .features .feature .wrap h1 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   bottom: 0.25rem;
   letter-spacing: 2px;
 }
