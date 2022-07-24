@@ -10,7 +10,12 @@
 
 @font-face {
   font-family: Monument Extended;
-  src: url(fonts/PPMonumentExtended-Regular.otf);
+  src: url(../fonts/PPMonumentExtended-Regular.otf);
+}
+
+@font-face {
+  font-family: ogg;
+  src: url(../fonts/Ogg-Roman.otf);
 }
 
 * {
@@ -23,6 +28,13 @@
 html {
   scroll-behavior: smooth;
 }
+
+body {
+  /* font-family: "Raleway", sans-serif; */
+  position: relative;
+  font-family: Monument Extended;
+}
+
 /* PRELOADER */
 .preloader {
   position: absolute;
@@ -55,11 +67,7 @@ html {
 .third {
   top: 66.6%;
 }
-body {
-  /* font-family: "Raleway", sans-serif; */
-  position: relative;
-  font-family: Monument Extended;
-}
+
 /* TEXT ANIMATION */
 .text {
   width: 100%;
@@ -95,9 +103,41 @@ body {
   color: #fff;
 }
 
+/* OGG TEXT */
+.ogg-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100vh;
+  width: 100%;
+  background-color: gray;
+}
+
+.ogg-container .ogg {
+  font-size: 12.5rem;
+  font-family: "ogg";
+}
+
+.ogg > p {
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255) 50%,
+    rgb(37, 37, 37) 50%
+  );
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin-bottom: -6.25rem;
+  margin-left: 3.125rem;
+}
+
 .section {
   margin: 5rem 0;
 }
+
+/* WRAPPER */
 
 .wrapper {
   background: #636363;
@@ -628,29 +668,12 @@ main header .nav-controls {
 }
 
 main .intro_section {
+  justify-self: center;
   width: 50%;
   margin: 0 auto;
   padding: 5rem 0;
   display: flex;
-
   flex-direction: column;
-}
-
-.intro_section h1 {
-  color: #f35626;
-  font-size: 2.5rem;
-  font-weight: 600;
-  margin-bottom: 1.5rem;
-  line-height: 3rem;
-  background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-animation: hue 20s infinite linear;
-}
-
-.intro_section .emoji {
-  font-size: 2.5rem;
-  font-weight: 600;
 }
 
 @-webkit-keyframes hue {
@@ -879,11 +902,6 @@ main .project-section .container .project-content-container .project-content {
 .articles .articles-container .article:hover img {
   opacity: 1;
   filter: brightness(100%) grayscale(0);
-}
-
-@font-face {
-  font-family: Monument Extended;
-  src: url(../fonts/PPMonumentExtended-Regular.otf);
 }
 
 .contact {
