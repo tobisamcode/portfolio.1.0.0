@@ -58,7 +58,7 @@ t1.from(
   ".landing section .content .features .feature h1, .landing section .content .features .feature p",
   1.5,
   {
-    y: "-150"
+    y: "-250"
   },
   7
 );
