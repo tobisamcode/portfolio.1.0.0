@@ -5,6 +5,11 @@
 1201px and more —  Extra large screens, TV */
 
 @media (max-width: 768px) {
+  .ogg-container {
+    display: flex;
+    flex-direction: column;
+  }
+
   main
     .project-section
     .container
@@ -13,6 +18,25 @@
     flex-direction: column;
   }
 
+  .ogg-container .ogg {
+    font-size: 5.5rem;
+  }
+  .ogg > p {
+    margin-left: 0.6rem;
+    line-height: 11rem;
+  }
+
+  .intro_section {
+    justify-self: center;
+    width: 90%;
+    margin: 0 auto;
+    padding: 5rem 0;
+  }
+
+  .intro_section p {
+    color: var(--shade-500);
+    font-size: 1rem;
+  }
   /* PROJECT */
   main .project-section .container .project-container .project {
     flex-direction: column;
