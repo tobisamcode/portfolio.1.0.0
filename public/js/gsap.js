@@ -240,67 +240,72 @@ gsap.to(".ogg p", {
     trigger: ".ogg p",
     scrub: 1,
     start: 250,
-    end: 800,
-    markers: true
+    end: 800
   }
 });
 
 gsap.from(".first-para", {
-  x: 300,
+  y: 300,
   stagger: 1,
   scrollTrigger: {
     trigger: ".first-para",
     scrub: 1,
     start: 250,
-    end: 800,
-    markers: true
+    end: 800
   }
 });
 
 gsap.from(".second-para", {
-  x: 700,
+  y: 700,
   stagger: 1,
   scrollTrigger: {
     trigger: ".first-para",
     scrub: 1,
     start: 250,
-    end: 800,
-    markers: true
+    end: 800
   }
 });
 gsap.from(".third-para", {
-  x: 1200,
+  y: 1200,
   stagger: 1,
   scrollTrigger: {
     trigger: ".first-para",
     scrub: 1,
     start: 250,
-    end: 800,
-    markers: true
+    end: 800
   }
 });
 
 gsap.from(".project-links.og", {
-  x: 800,
+  y: 800,
   stagger: 1,
   duration: 4,
   scrollTrigger: {
     trigger: ".og",
     scrub: 1,
     start: 700,
-    end: 900,
-    markers: true
+    end: 900
   }
 });
 
-gsap.from(".project-section .title-container", {
-  x: 800,
+gsap.from(".project-section h2", {
+  y: 800,
   stagger: 1,
   scrollTrigger: {
-    trigger: ".project-section .title-container",
+    trigger: ".project-section h2",
     scrub: 1,
-    start: 700,
-    end: 900,
-    markers: true
+    start: 1300,
+    end: 1400
+  }
+});
+
+gsap.from(".project-section .title-container p", {
+  y: 200,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".project-section .title-container p",
+    scrub: 1,
+    start: 1400,
+    end: 1500
   }
 });
