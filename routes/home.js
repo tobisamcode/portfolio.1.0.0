@@ -7,4 +7,8 @@ router.get("/", (req, res) => {
   res.render("home", { pageTitle: "Tobisam's Portfolio | Dev" });
 });
 
+router.get("/main", (req, res) => {
+  res.render("main", { pageTitle: "Tobi" });
+});
+
 module.exports = router;
