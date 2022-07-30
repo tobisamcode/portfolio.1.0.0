@@ -236,7 +236,7 @@ body {
   width: 100%;
 }
 
-.wrapper .landing section header {
+.wrapper .landing section .header {
   padding: 0 1.5rem;
   padding-top: 1.43rem;
   display: flex;
