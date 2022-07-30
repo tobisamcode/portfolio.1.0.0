@@ -676,31 +676,24 @@ body {
 header {
   position: sticky;
   display: flex;
+  align-items: center;
   justify-content: space-around;
   top: 0;
   left: 0;
   right: 0;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1.5rem;
   background-color: var(--background-color);
   transition: top 500ms;
   z-index: 2;
 }
 
-header .logo {
-  width: 5rem;
+header p a {
+  color: var(--text-color);
 }
 
-header .logo img {
-  width: 100%;
-}
-
-header nav {
-  border: 1px solid #ee5454;
-}
 header nav .nav-links {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   list-style: none;
 }
 .nav-links .link {
@@ -742,6 +735,7 @@ header .nav-controls {
 
 /* OGG TEXT */
 .ogg-container {
+  background-color: #000;
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -756,11 +750,7 @@ header .nav-controls {
 }
 
 .ogg > p {
-  background: linear-gradient(
-    to right,
-    rgba(255, 255, 255) 50%,
-    rgb(37, 37, 37) 50%
-  );
+  background-image: linear-gradient(0.351turn, #ff5858 23.71%, #c058ff 78.8%);
   background-size: 200% 100%;
   background-position-x: 100%;
   color: transparent;
@@ -780,7 +770,7 @@ header .nav-controls {
 }
 
 .intro_section p {
-  color: var(--shade-500);
+  color: var(--shade-100);
   font-size: 1.2rem;
   line-height: 2.4rem;
   margin-bottom: 1.5rem;
