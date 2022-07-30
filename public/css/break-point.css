@@ -5,9 +5,8 @@
 1201px and more —  Extra large screens, TV */
 
 @media (max-width: 768px) {
-  .ogg-container {
-    display: flex;
-    flex-direction: column;
+  .container {
+    width: 98%;
   }
 
   main
@@ -19,7 +18,7 @@
   }
 
   .ogg-container .ogg {
-    font-size: 5.5rem;
+    font-size: 4rem;
   }
   .ogg > p {
     margin-left: 0.6rem;
@@ -101,6 +100,7 @@
     font-size: 0.8rem;
   }
   .contact .contact-container {
+    width: 100%;
     align-items: center;
   }
   .contact .contact-container .paragraph {
@@ -117,6 +117,22 @@
   .contact .contact-container .hello {
     align-self: center;
     align-items: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .homepage h1 p {
+    font-size: 1.7rem;
+  }
+
+  .homepage h2 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: none;
   }
 }
 
