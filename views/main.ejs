@@ -2,10 +2,10 @@
 <html lang="en">
   <%-include('includes/head.ejs') %>
 
-  <body style="overflow: scrooll;">
+  <body style="overflow: scrooll">
     <!-- <div class="loading-text">0%</div> -->
     <!-- OVERYLAY -->
-    <section class="text">
+    <section class="text" style="display: none">
       <h1>
         <span data-char="T">T</span>
         <span data-char=".">o</span>
@@ -20,74 +20,73 @@
         <span data-char="A">A</span>
         <span data-char=".">N</span>
       </h1>
+
+      <div class="preloader">
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+      </div>
     </section>
 
-    <div class="preloader">
-      <div class="overlay first"></div>
-      <div class="overlay second"></div>
-      <div class="overlay third"></div>
+    <div class="home-page"></div>
+
+    <div id="about" class="ogg-container">
+      <div class="ogg">
+        <p>Hello</p>
+        <p>I'm Tobi</p>
+        <p>Adesokan</p>
+      </div>
+
+      <section class="intro_section">
+        <div class="intro_subtitle">
+          <p class="first-para">
+            I’m a self-taught Front End Developer and school-taught Mathematics
+            Scholar from Nigeria.
+          </p>
+          <p class="second-para">
+            I've been
+            <span class="highlight">building websites since 2020</span> with a
+            focus on responsive design, accessibility, software scalability and
+            pleasing aesthetics.
+          </p>
+          <p class="third-para">
+            I am a
+            <span class="highlight">mathematics and a scientist</span>
+            during the day and a full-time
+            <span class="highlight">software engineer</span> every other time.
+            You can always catch me either talking tech or building with
+            technology.
+          </p>
+        </div>
+
+        <div class="project-links center og">
+          <a href="https://doteightplus.com/" target="_blank" class="link-btn"
+            >more about me</a
+          >
+        </div>
+      </section>
     </div>
 
-    <div id="smooth-content">
-    
-        <div id="container">
-          <div id="about" class="ogg-container">
-            <div class="ogg">
-              <p>Hello</p>
-              <p>I'm Tobi</p>
-              <p>Adesokan</p>
-            </div>
-    
-            <section class="intro_section">
-              <div class="intro_subtitle">
-                <p class="first-para">
-                  I’m a self-taught Front End Developer and school-taught
-                  Mathematics Scholar from Nigeria.
-                </p>
-                <p class="second-para">
-                  I've been
-                  <span class="highlight">building websites since 2020</span> with a
-                  focus on responsive design, accessibility, software scalability
-                  and pleasing aesthetics.
-                </p>
-                <p class="third-para">
-                  I am a
-                  <span class="highlight">mathematics and a scientist</span>
-                  during the day and a full-time
-                  <span class="highlight">software engineer</span> every other time.
-                  You can always catch me either talking tech or building with
-                  technology.
-                </p>
-              </div>
-    
-              <div class="project-links center og">
-                <a href="https://doteightplus.com/" target="_blank" class="link-btn"
-                  >more about me</a
-                >
-              </div>
-            </section>
-          </div>
-    
-          <div class="wave-border bottom">
-            <svg
-              viewBox="0 0 500 150"
-              preserveAspectRatio="none"
-              style="height: 100%; width: 100%"
-            >
-              <path
-                d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-                style="stroke: none; fill: var(--shade-300)"
-              ></path>
-              <path
-                class="neon-path"
-                d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
-                style="stroke: var(--neon-color); fill: none"
-              ></path>
-            </svg>
-          </div>
-    
-          <main class="main" id="main">
-            <!-- <header>
+    <div class="wave-border bottom">
+      <svg
+        viewBox="0 0 500 150"
+        preserveAspectRatio="none"
+        style="height: 100%; width: 100%"
+      >
+        <path
+          d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+          style="stroke: none; fill: var(--shade-300)"
+        ></path>
+        <path
+          class="neon-path"
+          d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98"
+          style="stroke: var(--neon-color); fill: none"
+        ></path>
+      </svg>
+    </div>
+
+    <main class="main" id="main">
+      <!-- <header>
               <div class="logo"><img src="/img/logo.png" alt="logo" /></div>
               <nav>
                 <ul>
@@ -105,360 +104,352 @@
                 ></button>
               </div>
             </header> -->
-    
-            <section class="project-section" id="project">
-              <div class="container">
-                <div class="title-container">
-                  <h2>Featured Projects 💻</h2>
-                  <p>
-                    I do most of my work under contract but I tend to freelance from
-                    time to time or build projects for fun. Here are some of my most
-                    recent projects:
-                  </p>
-                </div>
-                <div class="project-container">
-                  <div class="project">
-                    <div class="project-image">
-                      <img
-                        src="/img/projects/move-app.png"
-                        height="340"
-                        width="720"
-                        alt="doteightplus"
-                      />
-                    </div>
-                    <div class="project-content-container">
-                      <div class="project-content">
-                        <h3 class="project-title">
-                          <a
-                            href="https://tobi-movie-app.herokuapp.com/"
-                            target="_blank"
-                            >Movie app</a
-                          >
-                        </h3>
-    
-                        <div class="project-description">
-                          <p>
-                            I built this project to improve my skills using the
-                            NuxtJS framework layout so I used an existing API from
-                            moviedb which helped in getting the databases of the
-                            latest action films trending
-                          </p>
-                        </div>
-    
-                        <ul class="project-tags">
-                          <li class="tag">VUEX</li>
-                          <li class="tag">NUXT</li>
-                          <li class="tag">CSS/SCSS</li>
-                          <li class="tag">AXIOS</li>
-                        </ul>
-    
-                        <div class="project-links">
-                          <a
-                            href="https://tobi-movie-app.herokuapp.com/"
-                            target="_blank"
-                            class="link-btn"
-                            >visit site</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+
+      <section class="project-section" id="project">
+        <div class="container">
+          <div class="title-container">
+            <h2>Featured Projects 💻</h2>
+            <p>
+              I do most of my work under contract but I tend to freelance from
+              time to time or build projects for fun. Here are some of my most
+              recent projects:
+            </p>
+          </div>
+          <div class="project-container">
+            <div class="project">
+              <div class="project-image">
+                <img
+                  src="/img/projects/move-app.png"
+                  height="340"
+                  width="720"
+                  alt="doteightplus"
+                />
+              </div>
+              <div class="project-content-container">
+                <div class="project-content">
+                  <h3 class="project-title">
+                    <a
+                      href="https://tobi-movie-app.herokuapp.com/"
+                      target="_blank"
+                      >Movie app</a
+                    >
+                  </h3>
+
+                  <div class="project-description">
+                    <p>
+                      I built this project to improve my skills using the NuxtJS
+                      framework layout so I used an existing API from moviedb
+                      which helped in getting the databases of the latest action
+                      films trending
+                    </p>
                   </div>
-                  <div class="project">
-                    <div class="project-image">
-                      <img
-                        src="/img/projects/DotPlus.png"
-                        height="340"
-                        width="720"
-                        alt="doteightplus"
-                      />
-                    </div>
-                    <div class="project-content-container">
-                      <div class="project-content">
-                        <h3 class="project-title">
-                          <a href="https://doteightplus.com/" target="_blank"
-                            >doteightplus</a
-                          >
-                        </h3>
-    
-                        <div class="project-description">
-                          <p>
-                            I built this project for a client after attending her
-                            yoga class. She wanted a WordPress site with a more
-                            custom layout so I used an existing WordPress theme and
-                            tweaked it with about 500 lines of additional CSS.
-                          </p>
-                        </div>
-    
-                        <ul class="project-tags">
-                          <li class="tag">HTML</li>
-                          <li class="tag">CSS/SCSS</li>
-                          <li class="tag">JAVASCRIPT</li>
-                        </ul>
-    
-                        <div class="project-links">
-                          <a
-                            href="https://doteightplus.com/"
-                            target="_blank"
-                            class="link-btn"
-                            >visit site</a
-                          >
-                        </div>
-                      </div>
-                    </div>
+
+                  <ul class="project-tags">
+                    <li class="tag">VUEX</li>
+                    <li class="tag">NUXT</li>
+                    <li class="tag">CSS/SCSS</li>
+                    <li class="tag">AXIOS</li>
+                  </ul>
+
+                  <div class="project-links">
+                    <a
+                      href="https://tobi-movie-app.herokuapp.com/"
+                      target="_blank"
+                      class="link-btn"
+                      >visit site</a
+                    >
                   </div>
-                  <div class="project">
-                    <div class="project-image">
-                      <img
-                        src="/img/projects/DotPlus.png"
-                        height="340"
-                        width="720"
-                        alt="doteightplus"
-                      />
-                    </div>
-                    <div class="project-content-container">
-                      <div class="project-content">
-                        <h3 class="project-title">
-                          <a href="https://doteightplus.com/" target="_blank"
-                            >doteightplus</a
-                          >
-                        </h3>
-    
-                        <div class="project-description">
-                          <p>
-                            I built this project for a client after attending her
-                            yoga class. She wanted a WordPress site with a more
-                            custom layout so I used an existing WordPress theme and
-                            tweaked it with about 500 lines of additional CSS.
-                          </p>
-                        </div>
-    
-                        <ul class="project-tags">
-                          <li class="tag">HTML</li>
-                          <li class="tag">CSS/SCSS</li>
-                          <li class="tag">JAVASCRIPT</li>
-                        </ul>
-    
-                        <div class="project-links">
-                          <a
-                            href="https://doteightplus.com/"
-                            target="_blank"
-                            class="link-btn"
-                            >visit site</a
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-links center">
-                  <a href="/project" class="link-btn">view all projects</a>
                 </div>
               </div>
-            </section>
-    
-            <div class="wave-border">
-              <svg
-                viewBox="0 0 500 150"
-                preserveAspectRatio="none"
-                style="height: 100%; width: 100%"
-              >
-                <path
-                  d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                  style="stroke: none; fill: var(--shade-100)"
-                ></path>
-                <path
-                  class="neon-path"
-                  d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
-                  style="stroke: var(--neon-color); fill: none"
-                ></path>
-              </svg>
             </div>
-    
-            <section class="articles">
-              <div class="container">
-                <div class="title-container scroll-in js-opacity scrolled">
-                  <h2 class="section-title">
-                    Featured Articles <span class="title-icon">🗒</span>
-                  </h2>
-                  <p class="section-subtitle">
-                    I write the type of articles I would want to read when trying to
-                    understand a new concept or develop a skill. Here are some
-                    things I've written recently:
-                  </p>
-                </div>
-                <div class="articles-container">
-                  <div class="article-card">
-                    <div class="article scroll-in js-opacity scrolled">
-                      <div class="article-image">
-                        <a
-                          href="https://medium.com/@samueloluwatobiloba48/why-javascript-remains-my-favorite-language-d2116e6efd5c"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          <img
-                            src="/img/articles/javascript.png"
-                            alt="How To Learn JavaScript"
-                          />
-                        </a>
-                      </div>
-                      <div class="article-content">
-                        <div class="article-site">
-                          <a
-                            href="https://medium.com/@samueloluwatobiloba48/why-javascript-remains-my-favorite-language-d2116e6efd5c"
-                            target="_blank"
-                            rel="noopener"
-                            >MEDIUM</a
-                          >
-                        </div>
-                        <h3 class="article-title">
-                          <a
-                            href="https://medium.com/@samueloluwatobiloba48/why-javascript-remains-my-favorite-language-d2116e6efd5c"
-                            target="_blank"
-                            rel="noopener"
-                          >
-                            Why JavaScript Remains My Favorite Language.
-                          </a>
-                        </h3>
-                        <div class="article-description">
-                          <p>
-                            In this article, we'll discover what JavaScript is, what
-                            it's used for, and recommend some courses to help you
-                            start your JS learning journey.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="article-card">
-                    <div class="article scroll-in js-opacity scrolled">
-                      <div class="article-image">
-                        <a
-                          href="https://medium.com/@samueloluwatobiloba48/the-singleton-design-pattern-91cf5c752617"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          <img
-                            src="/img/articles/design.png"
-                            alt="A Beginner's Guide To Creating A Portfolio Website"
-                          />
-                        </a>
-                      </div>
-                      <div class="article-content">
-                        <div class="article-site">
-                          <a
-                            href="https://medium.com/@samueloluwatobiloba48/the-singleton-design-pattern-91cf5c752617"
-                            target="_blank"
-                            rel="noopener"
-                            >medium</a
-                          >
-                        </div>
-                        <h3 class="article-title">
-                          <a
-                            href="https://medium.com/@samueloluwatobiloba48/the-singleton-design-pattern-91cf5c752617"
-                            target="_blank"
-                            rel="noopener"
-                          >
-                            The Singleton Design Pattern
-                          </a>
-                        </h3>
-                        <div class="article-description">
-                          <p>
-                            In this article, we'll cover everything you need to know
-                            about the singleton design and it's features
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="article-card">
-                    <div class="article scroll-in js-opacity scrolled">
-                      <div class="article-image">
-                        <a
-                          href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
-                          target="_blank"
-                          rel="noopener"
-                        >
-                          <img
-                            src="/img/articles/javascript.png"
-                            alt="Handling Scroll Based Animation With Vanilla JavaScript"
-                          />
-                        </a>
-                      </div>
-                      <div class="article-content">
-                        <div class="article-site">
-                          <a
-                            href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
-                            target="_blank"
-                            rel="noopener"
-                            >envatotuts+</a
-                          >
-                        </div>
-                        <h3 class="article-title">
-                          <a
-                            href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
-                            target="_blank"
-                            rel="noopener"
-                          >
-                            Handling Scroll Based Animation With Vanilla JavaScript
-                          </a>
-                        </h3>
-                        <div class="article-description">
-                          <p>
-                            In this article, we'll explore how to implement a
-                            scroll-based styling on a page using native methods in
-                            vanilla JavaScript and CSS and how to optimize these
-                            methods for accessibility and performance.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="project-links center">
-                  <a href="articles" class="link-btn">View All Articles</a>
-                </div>
+            <div class="project">
+              <div class="project-image">
+                <img
+                  src="/img/projects/DotPlus.png"
+                  height="340"
+                  width="720"
+                  alt="doteightplus"
+                />
               </div>
-            </section>
-            <section class="contact">
-              <div class="container">
-                <div class="contact-container">
-                  <div class="paragraph">
-                    <p>Got an interesting project? I can help you.</p>
+              <div class="project-content-container">
+                <div class="project-content">
+                  <h3 class="project-title">
+                    <a href="https://doteightplus.com/" target="_blank"
+                      >doteightplus</a
+                    >
+                  </h3>
+
+                  <div class="project-description">
+                    <p>
+                      I built this project for a client after attending her yoga
+                      class. She wanted a WordPress site with a more custom
+                      layout so I used an existing WordPress theme and tweaked
+                      it with about 500 lines of additional CSS.
+                    </p>
                   </div>
-    
-                  <hr />
-    
-                  <div class="connect">
-                    <p class="first">connect with me</p>
-                    <p>socials @tobisam</p>
-                  </div>
-    
-                  <div class="follow">
-                    <p class="first">follow me</p>
-                    <ul>
-                      <li><span class="gh"></span> <a href="#">gh</a></li>
-                      <li><span class="me"></span> <a href="#">me</a></li>
-                      <li><span class="li"></span> <a href="#">li</a></li>
-                      <li><span class="tw"></span> <a href="#">tw</a></li>
-                    </ul>
-                  </div>
-    
-                  <div class="hello">
-                    <p class="first">say hello</p>
-                    <div class="email">samueloluwatobiloba48@gmail.com</div>
+
+                  <ul class="project-tags">
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS/SCSS</li>
+                    <li class="tag">JAVASCRIPT</li>
+                  </ul>
+
+                  <div class="project-links">
+                    <a
+                      href="https://doteightplus.com/"
+                      target="_blank"
+                      class="link-btn"
+                      >visit site</a
+                    >
                   </div>
                 </div>
               </div>
-            </section>
-          
+            </div>
+            <div class="project">
+              <div class="project-image">
+                <img
+                  src="/img/projects/DotPlus.png"
+                  height="340"
+                  width="720"
+                  alt="doteightplus"
+                />
+              </div>
+              <div class="project-content-container">
+                <div class="project-content">
+                  <h3 class="project-title">
+                    <a href="https://doteightplus.com/" target="_blank"
+                      >doteightplus</a
+                    >
+                  </h3>
+
+                  <div class="project-description">
+                    <p>
+                      I built this project for a client after attending her yoga
+                      class. She wanted a WordPress site with a more custom
+                      layout so I used an existing WordPress theme and tweaked
+                      it with about 500 lines of additional CSS.
+                    </p>
+                  </div>
+
+                  <ul class="project-tags">
+                    <li class="tag">HTML</li>
+                    <li class="tag">CSS/SCSS</li>
+                    <li class="tag">JAVASCRIPT</li>
+                  </ul>
+
+                  <div class="project-links">
+                    <a
+                      href="https://doteightplus.com/"
+                      target="_blank"
+                      class="link-btn"
+                      >visit site</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-links center">
+            <a href="/project" class="link-btn">view all projects</a>
+          </div>
         </div>
-  
-        </main>
-  
-        <div class="cursor"></div>
-        <div class="cursor2"></div>
+      </section>
+
+      <div class="wave-border">
+        <svg
+          viewBox="0 0 500 150"
+          preserveAspectRatio="none"
+          style="height: 100%; width: 100%"
+        >
+          <path
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+            style="stroke: none; fill: var(--shade-100)"
+          ></path>
+          <path
+            class="neon-path"
+            d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98"
+            style="stroke: var(--neon-color); fill: none"
+          ></path>
+        </svg>
       </div>
-  
+
+      <section class="articles">
+        <div class="container">
+          <div class="title-container scroll-in js-opacity scrolled">
+            <h2 class="section-title">
+              Featured Articles <span class="title-icon">🗒</span>
+            </h2>
+            <p class="section-subtitle">
+              I write the type of articles I would want to read when trying to
+              understand a new concept or develop a skill. Here are some things
+              I've written recently:
+            </p>
+          </div>
+          <div class="articles-container">
+            <div class="article-card">
+              <div class="article scroll-in js-opacity scrolled">
+                <div class="article-image">
+                  <a
+                    href="https://medium.com/@samueloluwatobiloba48/why-javascript-remains-my-favorite-language-d2116e6efd5c"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="/img/articles/javascript.png"
+                      alt="How To Learn JavaScript"
+                    />
+                  </a>
+                </div>
+                <div class="article-content">
+                  <div class="article-site">
+                    <a
+                      href="https://medium.com/@samueloluwatobiloba48/why-javascript-remains-my-favorite-language-d2116e6efd5c"
+                      target="_blank"
+                      rel="noopener"
+                      >MEDIUM</a
+                    >
+                  </div>
+                  <h3 class="article-title">
+                    <a
+                      href="https://medium.com/@samueloluwatobiloba48/why-javascript-remains-my-favorite-language-d2116e6efd5c"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Why JavaScript Remains My Favorite Language.
+                    </a>
+                  </h3>
+                  <div class="article-description">
+                    <p>
+                      In this article, we'll discover what JavaScript is, what
+                      it's used for, and recommend some courses to help you
+                      start your JS learning journey.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-card">
+              <div class="article scroll-in js-opacity scrolled">
+                <div class="article-image">
+                  <a
+                    href="https://medium.com/@samueloluwatobiloba48/the-singleton-design-pattern-91cf5c752617"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="/img/articles/design.png"
+                      alt="A Beginner's Guide To Creating A Portfolio Website"
+                    />
+                  </a>
+                </div>
+                <div class="article-content">
+                  <div class="article-site">
+                    <a
+                      href="https://medium.com/@samueloluwatobiloba48/the-singleton-design-pattern-91cf5c752617"
+                      target="_blank"
+                      rel="noopener"
+                      >medium</a
+                    >
+                  </div>
+                  <h3 class="article-title">
+                    <a
+                      href="https://medium.com/@samueloluwatobiloba48/the-singleton-design-pattern-91cf5c752617"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      The Singleton Design Pattern
+                    </a>
+                  </h3>
+                  <div class="article-description">
+                    <p>
+                      In this article, we'll cover everything you need to know
+                      about the singleton design and it's features
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="article-card">
+              <div class="article scroll-in js-opacity scrolled">
+                <div class="article-image">
+                  <a
+                    href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                    target="_blank"
+                    rel="noopener"
+                  >
+                    <img
+                      src="/img/articles/javascript.png"
+                      alt="Handling Scroll Based Animation With Vanilla JavaScript"
+                    />
+                  </a>
+                </div>
+                <div class="article-content">
+                  <div class="article-site">
+                    <a
+                      href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                      target="_blank"
+                      rel="noopener"
+                      >envatotuts+</a
+                    >
+                  </div>
+                  <h3 class="article-title">
+                    <a
+                      href="https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Handling Scroll Based Animation With Vanilla JavaScript
+                    </a>
+                  </h3>
+                  <div class="article-description">
+                    <p>
+                      In this article, we'll explore how to implement a
+                      scroll-based styling on a page using native methods in
+                      vanilla JavaScript and CSS and how to optimize these
+                      methods for accessibility and performance.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-links center">
+            <a href="articles" class="link-btn">View All Articles</a>
+          </div>
+        </div>
+      </section>
+      <section class="contact">
+        <div class="container">
+          <div class="contact-container">
+            <div class="paragraph">
+              <p>Got an interesting project? I can help you.</p>
+            </div>
+
+            <hr />
+
+            <div class="connect">
+              <p class="first">connect with me</p>
+              <p>socials @tobisam</p>
+            </div>
+
+            <div class="follow">
+              <p class="first">follow me</p>
+              <ul>
+                <li><span class="gh"></span> <a href="#">gh</a></li>
+                <li><span class="me"></span> <a href="#">me</a></li>
+                <li><span class="li"></span> <a href="#">li</a></li>
+                <li><span class="tw"></span> <a href="#">tw</a></li>
+              </ul>
+            </div>
+
+            <div class="hello">
+              <p class="first">say hello</p>
+              <div class="email">samueloluwatobiloba48@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="/js/main.js"></script>
     <script
