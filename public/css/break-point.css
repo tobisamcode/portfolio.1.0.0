@@ -16,6 +16,9 @@
     .project:nth-of-type(even) {
     flex-direction: column;
   }
+  header .nav-controls {
+    display: block;
+  }
 
   .ogg-container .ogg {
     font-size: 4rem;
