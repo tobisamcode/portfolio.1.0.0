@@ -254,6 +254,8 @@ body {
 
 .wrapper .landing section .content .features {
   width: 20%;
+
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -315,8 +317,8 @@ body {
 
 .wrapper .landing section .content .theme h2 {
   text-transform: capitalize;
-  color: #ee5454;
-  font-size: 1.5em;
+  color: white;
+  font-size: 3em;
   align-self: flex-start;
   overflow: hidden;
   position: relative;
@@ -565,6 +567,12 @@ body {
 .wrap {
   position: relative;
 }
+
+.home-page {
+  height: 100vh;
+  background-color: #000;
+}
+
 /* OGG TEXT */
 .ogg-container {
   display: flex;
@@ -781,6 +789,7 @@ main .project-section .container .project-content-container .project-content {
   flex-direction: column;
   transition: transform 500ms;
   padding-bottom: 1rem;
+  background-color: white;
 }
 
 .articles .articles-container .article:hover {
