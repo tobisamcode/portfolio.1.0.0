@@ -20,6 +20,13 @@
     display: block;
   }
 
+  header p {
+    width: 60%;
+  }
+  header p a {
+    font-size: 0.9rem;
+  }
+
   .ogg-container .ogg {
     font-size: 4rem;
   }
@@ -36,7 +43,6 @@
   }
 
   .intro_section p {
-    color: var(--shade-500);
     font-size: 1rem;
   }
   /* PROJECT */
