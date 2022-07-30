@@ -2,7 +2,7 @@
 <html lang="en">
   <%-include('includes/head.ejs') %>
 
-  <body>
+  <body style="overflow: hidden">
     <!-- <div class="loading-text">0%</div> -->
     <!-- OVERYLAY -->
     <section class="text">
@@ -20,13 +20,13 @@
         <span data-char="A">A</span>
         <span data-char=".">N</span>
       </h1>
+      <div class="preloader">
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+      </div>
     </section>
 
-    <div class="preloader">
-      <div class="overlay first"></div>
-      <div class="overlay second"></div>
-      <div class="overlay third"></div>
-    </div>
     <!-- OVERYLAY ENDS-->
 
     <!-- PRELOADER -->
@@ -142,7 +142,7 @@
 
                 <div class="scroll">
                   <div class="next">
-                    <a href="#about">
+                    <a href="/main">
                       <h3>
                         <span>
                           <ion-icon
