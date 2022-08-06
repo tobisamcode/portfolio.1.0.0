@@ -4,7 +4,7 @@ const rootDir = require("../utils/path");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("home", { pageTitle: "Tobisam's Portfolio | Dev" });
+  res.render("home", { pageTitle: "Portfolio " });
 });
 
 router.get("/main", (req, res) => {
