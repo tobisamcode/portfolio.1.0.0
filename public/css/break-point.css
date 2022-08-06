@@ -16,6 +16,10 @@
     .project:nth-of-type(even) {
     flex-direction: column;
   }
+  header {
+    padding: 0.5rem;
+  }
+
   header .nav-controls {
     display: block;
   }
