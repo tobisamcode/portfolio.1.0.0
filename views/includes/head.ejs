@@ -117,7 +117,6 @@
     }
 
     .hamburger-inner {
-      width: 2.1rem;
       display: block;
       top: 50%;
       margin-top: -0.125rem;
@@ -183,6 +182,7 @@
         transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
     .mobile-nav {
+      text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -249,7 +249,7 @@
     @media screen and (max-width: 30rem) {
       .hamburger {
         padding: -16px 0;
-        margin-right: 0;
+        margin-right: 2rem;
       }
 
       .hamburger-box {
@@ -403,9 +403,7 @@
       main header .logo img {
         width: 64px;
       }
-      main header nav {
-        display: none;
-      }
+
       main .intro_section {
         width: 95%;
         margin: 16px auto;
@@ -530,20 +528,6 @@
         display: none;
       }
       /* MAIN */
-
-      main header {
-        max-width: 90%;
-      }
-      main .intro_section {
-        width: 90%;
-        margin: 16px auto;
-      }
-      main .intro_section a {
-        width: 80%;
-      }
-      main header nav {
-        display: none;
-      }
     }
 
     @media screen and (max-width: 64rem) {
@@ -677,7 +661,24 @@
       }
     }
 
-    @media (min-width: 64.0625rem) and (max-width: 75rem) {
+    @media screen and (max-width: 768px) {
+      .hamburger {
+        padding: -16px 0;
+        margin-right: 0rem;
+      }
+      .hamburger-inner,
+      .hamburger-inner::before,
+      .hamburger-inner::after {
+        width: 2.125rem;
+        height: 2px;
+      }
+      .hamburger-inner::before {
+        top: -12px;
+      }
+
+      .hamburger-inner::after {
+        bottom: -12px;
+      }
     }
   </style>
 </head>
