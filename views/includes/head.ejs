@@ -13,9 +13,9 @@
     /* CURSOR ANIMATION */
     .cursor {
       position: fixed;
-      width: 50px;
-      height: 50px;
-      border: 1px solid #c6c6c6;
+      width: 3.125rem;
+      height: 3.125rem;
+      border: 0.0625rem solid #c6c6c6;
       border-radius: 50%;
       left: 0;
       top: 0;
@@ -26,8 +26,8 @@
 
     .cursor2 {
       position: fixed;
-      width: 10px;
-      height: 10px;
+      width: 0.625rem;
+      height: 0.625rem;
       background-color: #c6c6c6;
       border-radius: 50%;
       left: 0;
@@ -38,20 +38,20 @@
     }
 
     .loading-text {
-      width: 100px;
-      height: 100px;
+      width: 6.25rem;
+      height: 6.25rem;
       position: absolute;
-      font-size: 60px;
+      font-size: 3.75rem;
       top: 50%;
       right: 50%;
-      margin-top: -50px;
-      margin-right: -50px;
+      margin-top: -3.125rem;
+      margin-right: -3.125rem;
       color: #fff;
       z-index: 100;
     }
     /* hamburger */
     .hamburger {
-      padding: 15px 15px;
+      padding: 0.9375rem 0.9375rem;
       display: inline-block;
       cursor: pointer;
       transition-property: opacity, filter, transform;
@@ -62,14 +62,14 @@
       text-transform: none;
       background-color: transparent;
       border: 0;
-      margin: 0 10rem;
+      margin-right: 32px;
       overflow: visible;
       z-index: 100;
     }
 
     .hamburger:hover {
       opacity: 0.7;
-      transform: translateY(-0.5rem);
+      transform: translateY(-8px);
     }
 
     .hamburger.is-active:hover {
@@ -83,25 +83,26 @@
     }
 
     .hamburger-box {
-      width: 40px;
-      height: 24px;
+      width: 3.75rem;
+      height: 1.5rem;
       display: inline-block;
       position: relative;
     }
 
     .hamburger-inner {
+      width: 2.1rem;
       display: block;
       top: 50%;
-      margin-top: -2px;
+      margin-top: -0.125rem;
     }
 
     .hamburger-inner,
     .hamburger-inner::before,
     .hamburger-inner::after {
-      width: 30px;
-      height: 2px;
+      width: 3.125rem;
+      height: 0.125rem;
       background-color: #fff;
-      border-radius: 4px;
+      border-radius: 0.125rem;
       position: absolute;
       transition-property: transform;
       transition-duration: 0.15s;
@@ -115,11 +116,11 @@
     }
 
     .hamburger-inner::before {
-      top: -10px;
+      top: -0.9375rem;
     }
 
     .hamburger-inner::after {
-      bottom: -10px;
+      bottom: -0.9375rem;
     }
 
     .hamburger--spin .hamburger-inner {
@@ -155,17 +156,20 @@
         transform 0.22s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
     }
     .mobile-nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 50%;
       height: 100vh;
       max-width: 90%;
       position: fixed;
       left: 0;
       top: 0;
-      background: white;
+      background: black;
       z-index: 10;
-      padding: 2rem 1rem 1rem 2rem;
+      padding: 32px 16px 16px 32px;
       transform: translateX(-100%);
-      transition: transform 0.3s ease-out;
+      transition: transform 0.5s ease-out;
     }
 
     .mobile-nav.open {
@@ -181,24 +185,36 @@
     }
 
     .mobile-nav__item {
-      margin: 1rem;
+      margin: 16px;
       padding: 0;
     }
 
     .mobile-nav__item a {
+      letter-spacing: 5px;
       text-decoration: none;
-      color: black;
-      font-size: 1.5rem;
-      padding: 0.5rem 2rem;
+      color: transparent;
+      font-size: 42px;
+      font-weight: 700;
+      padding: 8px 32px;
       transition: 0.5s ease;
+      text-transform: uppercase;
+      background: -webkit-linear-gradient(
+        -86deg,
+        #ff5858 5%,
+        #ccd6f6 53%,
+        black 91%
+      );
+      -webkit-text-stroke: 4px transparent;
+      background-clip: text;
+      -webkit-background-clip: text;
     }
 
     .mobile-nav__item a:active,
     .mobile-nav__item a:hover,
     .mobile-nav__item a.active {
-      background: #00695c;
+      /* background: #ee5454;
       color: white;
-      border-radius: 3px;
+      border-radius: 0.1875rem; */
     }
     .backdrop {
       position: fixed;
@@ -211,61 +227,61 @@
       display: none;
     }
 
-    @media screen and (min-width: 100px) {
+    @media screen and (max-width: 30rem) {
       .hamburger {
-        padding: -1rem 0;
+        padding: -16px 0;
         margin-right: 0;
       }
 
       .hamburger-box {
-        width: 20px;
-        height: 14px;
+        width: 1.25rem;
+        height: 0.875rem;
       }
     }
 
-    @media (min-width: 1201px) {
+    @media (min-width: 75.0625rem) {
       .wrapper .landing section .content .features {
         width: 20%;
-        margin-top: 6rem;
+        margin-top: 96px;
       }
 
       .wrapper .landing section .content .features .feature .wrap h1 {
-        font-size: 1rem;
-        bottom: 0.25rem;
+        font-size: 16px;
+        bottom: 4px;
       }
 
       .wrapper .landing section .content .features .feature .wrap p {
-        font-size: 0.6rem;
+        font-size: 9.6px;
         line-height: 1.5em;
       }
       .wrapper .landing section .content .extra .love {
-        margin-top: 3rem;
+        margin-top: 48px;
       }
       .wrapper .landing section .content .extra .love .content p {
-        width: 12rem;
+        width: 192px;
       }
     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 30rem) {
       .link-btn {
-        padding: 1em 0.5rem;
+        padding: 1em 8px;
 
-        font-size: 0.7rem;
+        font-size: 11.2px;
         letter-spacing: 0.1em;
       }
       .wrapper .circle-outer {
-        height: 35.25rem;
-        width: 35.25rem;
-        margin-left: -18rem;
-        margin-top: -18rem;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        height: 564px;
+        width: 564px;
+        margin-left: -288px;
+        margin-top: -288px;
+        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
       }
 
       .wrapper .bg {
         position: absolute;
         margin: auto;
-        inset: -100px 0 0 -40px;
-        height: 60rem;
+        inset: -6.25rem 0 0 -2.5rem;
+        height: 960px;
       }
 
       .wrapper .circle-inner {
@@ -273,7 +289,7 @@
       }
 
       .wrapper .landing aside {
-        width: 50px;
+        width: 3.125rem;
       }
       .wrapper .landing aside .social {
         display: none;
@@ -283,13 +299,13 @@
       }
 
       .wrapper .landing aside .logo {
-        height: 3rem;
+        height: 48px;
       }
 
       .wrapper .landing aside .logo img {
-        margin-left: 5rem;
-        margin-top: 3rem;
-        width: 5rem;
+        margin-left: 80px;
+        margin-top: 48px;
+        width: 80px;
       }
 
       .wrapper .landing aside .border {
@@ -322,8 +338,8 @@
         flex-direction: column;
         width: 60%;
         height: 100vh;
-        bottom: 10.75rem;
-        margin-right: 8.375rem;
+        bottom: 172px;
+        margin-right: 134px;
       }
 
       .wrapper .landing section .content .theme h1 {
@@ -331,8 +347,8 @@
         font-weight: 500;
       }
       .wrapper .landing section .content .theme p {
-        font-size: 1rem;
-        padding: 23px 12px;
+        font-size: 16px;
+        padding: 1.4375rem 0.75rem;
       }
       .wrapper .landing section .content .theme .bar {
         display: none;
@@ -345,14 +361,14 @@
 
       .wrapper .landing section .content .extra .love {
         position: absolute;
-        bottom: 15.5rem;
+        bottom: 248px;
         display: flex;
       }
 
       .wrapper .landing section .content .extra .scroll {
         position: absolute;
-        bottom: 8.5rem;
-        right: 112px;
+        bottom: 136px;
+        right: 7rem;
         display: flex;
         align-items: center;
       }
@@ -366,41 +382,41 @@
         max-width: 95%;
       }
       main header .logo img {
-        width: 4rem;
+        width: 64px;
       }
       main header nav {
         display: none;
       }
       main .intro_section {
         width: 95%;
-        margin: 1rem auto;
+        margin: 16px auto;
       }
       main .intro_section h1 {
-        font-size: 1.75rem;
+        font-size: 28px;
       }
       main .intro_section p {
         width: 100%;
-        font-size: 1rem;
+        font-size: 16px;
       }
       main .intro_section a {
         width: 80%;
       }
     }
 
-    @media (min-width: 481px) and (max-width: 768px) {
+    @media (min-width: 30.0625rem) and (max-width: 48rem) {
       .wrapper .circle-outer {
-        height: 35.25rem;
-        width: 35.25rem;
-        margin-left: -18rem;
-        margin-top: -18rem;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        height: 564px;
+        width: 564px;
+        margin-left: -288px;
+        margin-top: -288px;
+        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
       }
 
       .wrapper .bg {
         position: absolute;
         margin: auto;
-        inset: -100px 0 0 -40px;
-        height: 60rem;
+        inset: -6.25rem 0 0 -2.5rem;
+        height: 960px;
       }
 
       .wrapper .circle-inner {
@@ -408,7 +424,7 @@
       }
 
       .wrapper .landing aside {
-        width: 50px;
+        width: 3.125rem;
       }
       .wrapper .landing aside .social {
         display: none;
@@ -418,13 +434,13 @@
       }
 
       .wrapper .landing aside .logo {
-        height: 3rem;
+        height: 48px;
       }
 
       .wrapper .landing aside .logo img {
-        margin-left: 5rem;
-        margin-top: 3rem;
-        width: 4rem;
+        margin-left: 80px;
+        margin-top: 48px;
+        width: 64px;
       }
 
       .wrapper .landing aside .border {
@@ -457,8 +473,8 @@
         flex-direction: column;
         width: 60%;
         height: 100vh;
-        bottom: 10.75rem;
-        margin-right: 8.375rem;
+        bottom: 172px;
+        margin-right: 134px;
       }
 
       .wrapper .landing section .content .theme h1 {
@@ -466,8 +482,8 @@
         font-weight: 500;
       }
       .wrapper .landing section .content .theme p {
-        font-size: 1.5rem;
-        padding: 23px 12px;
+        font-size: 24px;
+        padding: 1.4375rem 0.75rem;
       }
       .wrapper .landing section .content .theme .bar {
         display: none;
@@ -480,14 +496,14 @@
 
       .wrapper .landing section .content .extra .love {
         position: absolute;
-        bottom: 15.5rem;
+        bottom: 248px;
         display: flex;
       }
 
       .wrapper .landing section .content .extra .scroll {
         position: absolute;
-        bottom: 8.5rem;
-        right: 112px;
+        bottom: 136px;
+        right: 7rem;
         display: flex;
         align-items: center;
       }
@@ -501,7 +517,7 @@
       }
       main .intro_section {
         width: 90%;
-        margin: 1rem auto;
+        margin: 16px auto;
       }
       main .intro_section a {
         width: 80%;
@@ -511,7 +527,7 @@
       }
     }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 64rem) {
       .ogg-container {
         display: flex;
         flex-direction: column;
@@ -522,20 +538,20 @@
       }
     }
 
-    @media (min-width: 769px) and (max-width: 1200px) {
+    @media (min-width: 48.0625rem) and (max-width: 75rem) {
       .wrapper .circle-outer {
-        height: 35.25rem;
-        width: 35.25rem;
-        margin-left: -18rem;
-        margin-top: -18rem;
-        border: 1px solid rgba(255, 255, 255, 0.5);
+        height: 564px;
+        width: 564px;
+        margin-left: -288px;
+        margin-top: -288px;
+        border: 0.0625rem solid rgba(255, 255, 255, 0.5);
       }
 
       .wrapper .bg {
         position: absolute;
         margin: auto;
-        inset: -100px 0 0 -40px;
-        height: 60rem;
+        inset: -6.25rem 0 0 -2.5rem;
+        height: 960px;
       }
 
       .wrapper .circle-inner {
@@ -543,7 +559,7 @@
       }
 
       .wrapper .landing aside {
-        width: 50px;
+        width: 3.125rem;
       }
       .wrapper .landing aside .social {
         display: flex;
@@ -553,13 +569,13 @@
       }
 
       .wrapper .landing aside .logo {
-        height: 3rem;
+        height: 48px;
       }
 
       .wrapper .landing aside .logo img {
-        margin-left: 5rem;
-        margin-top: 3rem;
-        width: 8rem;
+        margin-left: 80px;
+        margin-top: 48px;
+        width: 128px;
       }
 
       .wrapper .landing aside .border {
@@ -592,8 +608,8 @@
         flex-direction: column;
         width: 60%;
         height: 100vh;
-        bottom: 10.75rem;
-        margin-right: 8.375rem;
+        bottom: 172px;
+        margin-right: 134px;
       }
 
       .wrapper .landing section .content .theme h1 {
@@ -601,8 +617,8 @@
         font-weight: 500;
       }
       .wrapper .landing section .content .theme p {
-        font-size: 1.5rem;
-        padding: 23px 12px;
+        font-size: 24px;
+        padding: 1.4375rem 0.75rem;
       }
       .wrapper .landing section .content .theme .bar {
         display: none;
@@ -615,14 +631,14 @@
 
       .wrapper .landing section .content .extra .love {
         position: absolute;
-        bottom: 15.5rem;
+        bottom: 248px;
         display: flex;
       }
 
       .wrapper .landing section .content .extra .scroll {
         position: absolute;
-        bottom: 8.5rem;
-        right: 112px;
+        bottom: 136px;
+        right: 7rem;
         display: flex;
         align-items: center;
       }
@@ -638,11 +654,11 @@
       }
       main .intro_section {
         width: 90%;
-        margin: 1rem auto;
+        margin: 16px auto;
       }
     }
 
-    @media (min-width: 1025px) and (max-width: 1200px) {
+    @media (min-width: 64.0625rem) and (max-width: 75rem) {
     }
   </style>
 </head>
