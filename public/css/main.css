@@ -46,7 +46,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 50;
+  z-index: 100;
 }
 
 .overlay {
@@ -72,6 +72,7 @@ body {
 
 /* TEXT ANIMATION */
 .text {
+  position: fixed;
   width: 100%;
   display: flex;
   align-items: center;
@@ -80,6 +81,7 @@ body {
   background: #000;
   color: #fff;
   height: 100vh;
+  z-index: 50;
 }
 .text h1 {
   font-size: 7vw;
