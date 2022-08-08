@@ -655,6 +655,10 @@ body {
   position: relative;
 }
 
+.auto-type {
+  color: var(--main-color);
+}
+
 .scroll-button {
   position: absolute;
   bottom: 0;
