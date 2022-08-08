@@ -21,7 +21,67 @@
         Blogs
       </a>
     </li>
+
+    <div>
+      <ul class="my-icons">
+        <li>
+          <a href="#">
+            <ion-icon name="logo-github"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-codepen"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <ion-icon name="logo-medium"></ion-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
   </ul>
-  <div class="cursor"></div>
-  <div class="cursor2"></div>
+
+  <!-- <div class="cursor"></div>
+  <div class="cursor2"></div> -->
 </nav>
+
+<style>
+  .my-icons {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .my-icons li {
+    list-style: none;
+    transition: 0.7s ease-in-out;
+  }
+
+  .my-icons li a {
+    font-size: 32px;
+    color: #ff5858;
+  }
+
+  .my-icons li:hover {
+    transform: scale(0.9);
+  }
+
+  @media (max-width: 768px) {
+    .mobile-nav {
+      width: 100%;
+    }
+  }
+</style>
