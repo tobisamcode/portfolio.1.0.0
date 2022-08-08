@@ -3,6 +3,8 @@
   <%-include('includes/head.ejs') %>
 
   <body style="overflow: hidden">
+    <%-include('includes/navigation.ejs') %>
+    <div class="backdrop"></div>
     <!-- <div class="loading-text">0%</div> -->
     <!-- OVERYLAY -->
     <section class="text">
@@ -86,8 +88,12 @@
 
           <section>
             <div class="header">
-              <nav>
-                <button class="hamburger hamburger--spin" type="button">
+              <nav id="menu">
+                <button
+                  class="hamburger hamburger--spin"
+                  id="menu-btn"
+                  type="button"
+                >
                   <span class="hamburger-box">
                     <span class="hamburger-inner"></span>
                   </span>
@@ -177,5 +183,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
     <!-- GSAP ANIMATION -->
     <script src="/js/gsap.js"></script>
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const sideDrawer = document.querySelector(".mobile-nav");
+      const backdrop = document.querySelector(".backdrop");
+
+      function backdropClickHandler() {
+        btn.classList.remove("is-active");
+
+        backdrop.style.display = "none";
+        sideDrawer.classList.remove("open");
+      }
+
+      btn.addEventListener("click", () => {
+        console.log("clicked");
+        sideDrawer.classList.add("open");
+        btn.classList.add("is-active");
+        backdrop.style.display = "block";
+      });
+
+      backdrop.addEventListener("click", backdropClickHandler);
+    </script>
   </body>
 </html>
