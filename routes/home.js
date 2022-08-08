@@ -4,11 +4,11 @@ const rootDir = require("../utils/path");
 const router = express.Router();
 
 router.get("/", (req, res) => {
-  res.render("home", { pageTitle: "Portfolio " });
+  res.render("home", { path: "/", pageTitle: "Portfolio " });
 });
 
 router.get("/main", (req, res) => {
-  res.render("main", { pageTitle: "Tobi" });
+  res.render("main", { path: "/main", pageTitle: "Tobi" });
 });
 
 module.exports = router;
