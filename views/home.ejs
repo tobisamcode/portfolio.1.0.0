@@ -198,7 +198,7 @@
       btn.addEventListener("click", () => {
         console.log("clicked");
         sideDrawer.classList.add("open");
-        btn.classList.add("is-active");
+        btn.classList.toggle("is-active");
         backdrop.style.display = "block";
       });
 
