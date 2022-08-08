@@ -190,16 +190,16 @@
 
       function backdropClickHandler() {
         btn.classList.remove("is-active");
-
-        backdrop.style.display = "none";
+        backdrop.classList.toggle("blur");
         sideDrawer.classList.remove("open");
       }
 
       btn.addEventListener("click", () => {
         console.log("clicked");
-        sideDrawer.classList.add("open");
         btn.classList.toggle("is-active");
-        backdrop.style.display = "block";
+        // backdrop.style.display = "block";
+        backdrop.classList.toggle("blur");
+        sideDrawer.classList.toggle("open");
       });
 
       backdrop.addEventListener("click", backdropClickHandler);
