@@ -17,7 +17,7 @@
     flex-direction: column;
   }
   header {
-    padding: 0.5rem;
+    padding: 1.7rem 0rem;
   }
   header nav {
     display: none;
