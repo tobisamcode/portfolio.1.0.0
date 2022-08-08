@@ -1,19 +1,16 @@
 <nav class="mobile-nav">
   <ul class="mobile-nav__item-list">
     <li class="mobile-nav__item">
-      <a class="<%= path === '/' ? 'active' : '' %>" href="/"> Shop </a>
+      <a class="<%= path === '/main' ? 'active' : '' %>" href="/main"> Home </a>
     </li>
     <li class="mobile-nav__item">
-      <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">
-        Products
+      <a class="<%= path === '/main' ? 'active' : '' %>" href="/main">
+        About Me
       </a>
     </li>
     <li class="mobile-nav__item">
-      <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart"> Cart </a>
-    </li>
-    <li class="mobile-nav__item">
       <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">
-        Orders
+        Portfolios
       </a>
     </li>
     <li class="mobile-nav__item">
@@ -21,15 +18,7 @@
         class="<%= path === '/admin/add-product' ? 'active' : '' %>"
         href="/admin/add-product"
       >
-        Add Product
-      </a>
-    </li>
-    <li class="mobile-nav__item">
-      <a
-        class="<%= path === '/admin/products' ? 'active' : '' %>"
-        href="/admin/products"
-      >
-        Admin Products
+        Blogs
       </a>
     </li>
   </ul>
