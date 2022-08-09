@@ -23,6 +23,7 @@
       transform: translate(-50%, -50%);
       transition: 0.15s;
       z-index: 15;
+      mix-blend-mode: difference;
     }
 
     .cursor2 {
@@ -37,7 +38,13 @@
       transform: translate(-50%, -50%);
       transition: 0.2s;
       z-index: 15;
+      mix-blend-mode: difference;
     }
+
+    .wrapper .content:hover ~ .cursor2.main {
+      transform: scale(9);
+    }
+
     .cursor.main {
       position: fixed;
       width: 2.125rem;
@@ -55,13 +62,18 @@
       position: fixed;
       width: 1.625rem;
       height: 1.625rem;
-      background-color: #ff5858;
+      background: #ff5858;
       border-radius: 50%;
       left: 0;
       top: 0;
       pointer-events: none;
       transform: translate(-50%, -50%);
       transition: 0.25s;
+      mix-blend-mode: difference;
+    }
+
+    .header-text h1:hover ~ .cursor2.main {
+      transform: scale(6);
     }
 
     .loading-text {
