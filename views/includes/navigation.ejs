@@ -5,12 +5,12 @@
     </li>
     <li class="mobile-nav__item">
       <a class="<%= path === '/main' ? 'active' : '' %>" href="/main">
-        About Me
+        About
       </a>
     </li>
     <li class="mobile-nav__item">
       <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">
-        Portfolios
+        Portfolio
       </a>
     </li>
     <li class="mobile-nav__item">
@@ -19,6 +19,14 @@
         href="/admin/add-product"
       >
         Blogs
+      </a>
+    </li>
+    <li class="mobile-nav__item">
+      <a
+        class="<%= path === '/admin/add-product' ? 'active' : '' %>"
+        href="/admin/add-product"
+      >
+        Contact
       </a>
     </li>
     <div class="cursor main"></div>
