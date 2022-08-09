@@ -3,7 +3,9 @@
   <%-include('includes/head.ejs') %>
 
   <body style="overflow: scrooll">
-    <!-- <div class="loading-text">0%</div> -->
+    <%-include('includes/navigation.ejs') %>
+
+    <div class="backdrop"></div>
     <!-- OVERYLAY -->
     <section class="text">
       <h1>
@@ -67,7 +69,11 @@
           </ul>
         </nav>
         <div class="nav-controls">
-          <button class="hamburger"></button>
+          <button class="hamburger hamburger--spin" id="menu-btn" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         </div>
       </header>
 
@@ -469,5 +475,27 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
     <!-- GSAP ANIMATION -->
     <script src="/js/gsap.js"></script>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const sideDrawer = document.querySelector(".mobile-nav");
+      const backdrop = document.querySelector(".backdrop");
+
+      function backdropClickHandler() {
+        btn.classList.remove("is-active");
+        backdrop.classList.toggle("blur");
+        sideDrawer.classList.remove("open");
+      }
+
+      btn.addEventListener("click", () => {
+        console.log("clicked");
+        btn.classList.toggle("is-active");
+        // backdrop.style.display = "block";
+        backdrop.classList.toggle("blur");
+        sideDrawer.classList.toggle("open");
+      });
+
+      backdrop.addEventListener("click", backdropClickHandler);
+    </script>
   </body>
 </html>
