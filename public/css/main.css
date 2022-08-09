@@ -115,18 +115,18 @@ body {
 }
 
 .nav-controls .hamburger {
+  top: 1rem;
+  right: 2rem;
   padding: 0.9375rem 0.9375rem;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter, transform;
   transition-duration: 0.4s;
   transition-timing-function: linear;
-  font: inherit;
-
   text-transform: none;
   background-color: transparent;
   border: 0;
-  margin-right: 32px;
+  margin-right: -50px;
   overflow: visible;
   z-index: 10;
 }
@@ -156,9 +156,9 @@ body {
 .nav-controls .hamburger-inner,
 .nav-controls .hamburger-inner::before,
 .nav-controls .hamburger-inner::after {
-  width: 3.125rem;
-  height: 0.125rem;
-  background-color: black;
+  width: 2.125rem;
+  height: 2px;
+  background-color: red;
   border-radius: 0.125rem;
   position: absolute;
   transition-property: transform;
@@ -173,11 +173,11 @@ body {
 }
 
 .nav-controls .hamburger-inner::before {
-  top: -0.9375rem;
+  top: -12px;
 }
 
 .nav-controls .hamburger-inner::after {
-  bottom: -0.9375rem;
+  bottom: -12px;
 }
 
 .nav-controls .hamburger--spin .hamburger-inner {
@@ -195,6 +195,7 @@ body {
 }
 
 .nav-controls .hamburger--spin.is-active .hamburger-inner {
+  color: white;
   transform: rotate(225deg);
   transition-delay: 0.12s;
   transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
@@ -207,6 +208,7 @@ body {
 }
 
 .nav-controls .hamburger--spin.is-active .hamburger-inner::after {
+  color: white;
   bottom: 0;
   transform: rotate(-90deg);
   transition: bottom 0.1s ease-out,
