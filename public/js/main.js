@@ -33,9 +33,12 @@ function scale(number, inMin, inMax, outMin, outMax) {
   return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
 }
 
+// AUTO TYPE
 let typed = new Typed(".auto-type", {
   strings: ["Front End Developer", "Back End Developer"],
   typeSpeed: 100,
   backSpeed: 50,
   loop: true
 });
+
+// MENU
