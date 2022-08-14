@@ -4,28 +4,22 @@
       <a class="<%= path === '/main' ? 'active' : '' %>" href="/main"> Home </a>
     </li>
     <li class="mobile-nav__item">
-      <a class="<%= path === '/main' ? 'active' : '' %>" href="/main">
+      <a class="<%= path === '/about' ? 'active' : '' %>" href="/about">
         About
       </a>
     </li>
     <li class="mobile-nav__item">
-      <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">
+      <a class="<%= path === '/projects' ? 'active' : '' %>" href="/projects">
         Portfolio
       </a>
     </li>
     <li class="mobile-nav__item">
-      <a
-        class="<%= path === '/admin/add-product' ? 'active' : '' %>"
-        href="/admin/add-product"
-      >
+      <a class="<%= path === '/blogs' ? 'active' : '' %>" href="/blogs">
         Blogs
       </a>
     </li>
     <li class="mobile-nav__item">
-      <a
-        class="<%= path === '/admin/add-product ' ? 'active' : '' %>"
-        href="/main#contact"
-      >
+      <a class="<%= path === '/contact ' ? 'active' : '' %>" href="/contact">
         Contact
       </a>
     </li>
@@ -121,7 +115,7 @@
 
   @media (max-width: 768px) {
     .mobile-nav {
-      width: 100%;
+      width: 90%;
     }
     .mobile-nav__item a {
       letter-spacing: 2px;

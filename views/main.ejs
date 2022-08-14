@@ -483,14 +483,14 @@
       const backdrop = document.querySelector(".backdrop");
 
       function backdropClickHandler() {
-        btn.classList.remove("is-active");
+        btn.classList.remove("active");
         backdrop.classList.toggle("blur");
         sideDrawer.classList.remove("open");
       }
 
       btn.addEventListener("click", () => {
         console.log("clicked");
-        btn.classList.toggle("is-active");
+        btn.classList.toggle("active");
         // backdrop.style.display = "block";
         backdrop.classList.toggle("blur");
         sideDrawer.classList.toggle("open");
