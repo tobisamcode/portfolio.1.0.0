@@ -23,14 +23,14 @@
     </li>
     <li class="mobile-nav__item">
       <a
-        class="<%= path === '/admin/add-product' ? 'active' : '' %>"
-        href="/admin/add-product"
+        class="<%= path === '/admin/add-product ' ? 'active' : '' %>"
+        href="/main#contact"
       >
         Contact
       </a>
     </li>
-    <div class="cursor main"></div>
-    <div class="cursor2 main"></div>
+    <!-- <div class="cursor nav"></div>
+    <div class="cursor2 nav"></div> -->
 
     <div>
       <ul class="my-icons">
@@ -129,7 +129,7 @@
     }
   }
 
-  nav ul li:hover ~ .cursor2.main {
+  nav ul li:hover ~ .cursor2.nav {
     transform: scale(6);
   }
 </style>
