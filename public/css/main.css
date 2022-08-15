@@ -796,7 +796,7 @@ header {
   left: 0;
   right: 0;
   padding: 1.5rem;
-  background-color: var(--background-color);
+  background-color: white;
   transition: top 500ms;
   z-index: 2;
 }
@@ -839,7 +839,7 @@ header nav .nav-links {
 
 .nav-links .link:hover:before,
 .nav-links .link:focus:before,
-.nav-links .link.active:before {
+.nav-links .link:active:before {
   max-width: 10rem;
 }
 
