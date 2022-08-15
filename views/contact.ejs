@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%-include('includes/head.ejs') %>
+
+  <body>
+    <div class="backdrop"></div>
+
+    <%-include('includes/header.ejs') %> <%-include('includes/navigation.ejs')
+    %>
+
+    <script>
+      const btn = document.getElementById("menu-btn");
+      const sideDrawer = document.querySelector(".mobile-nav");
+      const backdrop = document.querySelector(".backdrop");
+
+      function backdropClickHandler() {
+        btn.classList.remove("active");
+        backdrop.classList.toggle("blur");
+        sideDrawer.classList.remove("open");
+      }
+
+      btn.addEventListener("click", () => {
+        console.log("clicked");
+        btn.classList.toggle("active");
+        // backdrop.style.display = "block";
+        backdrop.classList.toggle("blur");
+        sideDrawer.classList.toggle("open");
+      });
+
+      backdrop.addEventListener("click", backdropClickHandler);
+    </script>
+  </body>
+</html>
