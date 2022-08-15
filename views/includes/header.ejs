@@ -1,0 +1,72 @@
+<header>
+  <p>
+    <a href="/">Tobi.</a>
+  </p>
+  <nav>
+    <ul class="nav-links">
+      <li>
+        <a class="<%= path === '/about' ? 'active' : '' %>" href="/about">
+          about
+        </a>
+      </li>
+      <li>
+        <a class="<%= path === '/projects' ? 'active' : '' %>" href="/projects">
+          projects
+        </a>
+      </li>
+      <li>
+        <a class="<%= path === '/blogs' ? 'active' : '' %>" href="/blogs">
+          articles
+        </a>
+      </li>
+      <li>
+        <a class="<%= path === '/contact' ? 'active' : '' %>" href="/contact">
+          contact
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <div class="nav-controls">
+    <button class="hamburger hamburger--spin" id="menu-btn" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner" />
+      </span>
+    </button>
+  </div>
+</header>
+
+
+<style>
+   a {
+    position: relative;
+    text-align: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+  }
+
+   a:before {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    background-color: var(--main-color);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    max-width: 0;
+    transition: max-width 500ms;
+  }
+
+   a:hover,
+   a:focus {
+    outline: none;
+  }
+
+   a:hover:before,
+   a:focus:before,
+   a.active:before {
+    max-width: 10rem;
+  }
+</style>
+
+
