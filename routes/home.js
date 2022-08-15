@@ -11,4 +11,8 @@ router.get("/main", (req, res) => {
   res.render("main", { path: "/main", pageTitle: "Tobi" });
 });
 
+router.get("/about", (req, res) => {
+  res.render("about", { path: "/about", pageTitle: "About me" });
+});
+
 module.exports = router;
